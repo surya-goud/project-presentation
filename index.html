@@ -4,460 +4,481 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>ParkIQ Riverton — MRP Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
-<!-- ══ TOP NAV ══ -->
 <nav id="topnav">
   <div class="nav-brand">
     <div class="nav-logo">P</div>
-    <span class="nav-title">ParkIQ<span class="nav-sub">Riverton</span></span>
+    <span class="nav-title">ParkIQ <span class="nav-city">Riverton</span></span>
   </div>
   <div class="nav-links">
     <a href="#home">Home</a>
     <a href="#problem">Problem</a>
-    <a href="#data">Data</a>
+    <a href="#research">Research</a>
+    <a href="#data">Dataset</a>
     <a href="#dashboard">Dashboard</a>
     <a href="#solution">Solution</a>
     <a href="#comparison">Comparison</a>
     <a href="#ethics">Ethics</a>
     <a href="#lessons">Lessons</a>
+    <a href="#appendix">Appendix</a>
   </div>
-  <div class="nav-cta">
-    <a href="https://surya-goud.github.io/ParkIQ-app/" target="_blank" class="btn-nav">Launch App ↗</a>
-  </div>
+  <a href="https://surya-goud.github.io/ParkIQ-app/" target="_blank" class="btn-nav">Launch App ↗</a>
 </nav>
 
-<!-- ══════════════════════════════════
-     SECTION 1 — HERO / HOME
-══════════════════════════════════ -->
+<!-- ═══════════════════════════════════════
+     HERO — centered big title + team + exec summary
+═══════════════════════════════════════ -->
 <section id="home" class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-orb hero-orb1"></div>
-  <div class="hero-orb hero-orb2"></div>
-  <div class="hero-content">
+  <div class="hero-orb o1"></div>
+  <div class="hero-orb o2"></div>
+
+  <!-- ── HERO CENTER ── -->
+  <div class="hero-center">
     <div class="hero-eyebrow">
-      <span class="badge badge-orange">MRP Final Project</span>
-      <span class="badge badge-gray">City of Riverton · Case Study 1</span>
+      <span class="badge-orange">MRP Final Project</span>
+      <span class="badge-gray">City of Riverton · Case Study 1</span>
     </div>
-    <h1 class="hero-h1">PARK<span>IQ</span><br/>RIVERTON<br/>Team - 5</h1>
-    <p class="hero-desc">Modernizing the City of Riverton's Parking Permit & Enforcement Operations through data-driven insights, real-time systems integration, and a unified decision-making platform.</p>
+    <h1 class="hero-h1">PARK<span>IQ</span><br/>RIVERTON<br/><span class="hero-team">TEAM - 5</span></h1>
+    <p class="hero-desc">Modernizing the City of Riverton's Parking Permit &amp; Enforcement Operations through data-driven insights, real-time systems integration, and a unified decision-making platform.</p>
     <div class="hero-stats">
-      <div class="hstat"><div class="hs-v">50K</div><div class="hs-l">Transactions Analyzed</div></div>
-      <div class="hstat-div"></div>
-      <div class="hstat"><div class="hs-v">3</div><div class="hs-l">Data Tables Integrated</div></div>
-      <div class="hstat-div"></div>
-      <div class="hstat"><div class="hs-v">8</div><div class="hs-l">Zones Monitored</div></div>
-      <div class="hstat-div"></div>
-      <div class="hstat"><div class="hs-v">9</div><div class="hs-l">Stakeholder Groups</div></div>
+      <div class="hst"><div class="hv">50K</div><div class="hl">Transactions Analyzed</div></div>
+      <div class="hd"></div>
+      <div class="hst"><div class="hv">3</div><div class="hl">Data Tables Integrated</div></div>
+      <div class="hd"></div>
+      <div class="hst"><div class="hv">8</div><div class="hl">Zones Monitored</div></div>
+      <div class="hd"></div>
+      <div class="hst"><div class="hv">9</div><div class="hl">Stakeholder Groups</div></div>
     </div>
     <div class="hero-btns">
-      <a href="https://surya-goud.github.io/ParkIQ-app/" target="_blank" class="btn-primary">Launch Solution App ↗</a>
-      <a href="https://app.powerbi.com/view?r=eyJrIjoiZWI1ZGY5NTMtYWI5Yi00OTYyLTg0MTMtNDQwMzNmODliMGZjIiwidCI6ImNiMGNiZDgzLTU4ZGQtNDVhNS1hYWViLTc5Y2M0NDBmYjAzOCIsImMiOjF9" target="_blank" class="btn-secondary">View Power BI Dashboard ↗</a>
+      <a href="https://surya-goud.github.io/ParkIQ-app/" target="_blank" class="btn-pri">Launch Solution App ↗</a>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiZWI1ZGY5NTMtYWI5Yi00OTYyLTg0MTMtNDQwMzNmODliMGZjIiwidCI6ImNiMGNiZDgzLTU4ZGQtNDVhNS1hYWViLTc5Y2M0NDBmYjAzOCIsImMiOjF9" target="_blank" class="btn-sec">Power BI Dashboard ↗</a>
     </div>
   </div>
-  <!-- TEAM SECTION -->
 
-<div class="team-section">
-  <div class="team-title">Project Team</div>
-  <div class="team-grid">
-    <div class="team-card">
-      <div class="team-name">Tanuja Allamsetti</div>
-      <div class="team-role">System Architect</div>
+  <!-- ── PROJECT TEAM ── -->
+  <div class="team-section">
+    <h2 class="team-heading">Project Team</h2>
+    <div class="team-cards">
+      <div class="team-card">
+        <div class="tc-name">Tanuja Allamsetti</div>
+        <div class="tc-role">System Architect</div>
+      </div>
+      <div class="team-card">
+        <div class="tc-name">Prabhas Rayala</div>
+        <div class="tc-role">Data Analyst</div>
+      </div>
+      <div class="team-card">
+        <div class="tc-name">Mary Deepika Reddy Kikkuru</div>
+        <div class="tc-role">Prototype Designer</div>
+      </div>
+      <div class="team-card">
+        <div class="tc-name">Jaswanth Rachabanti</div>
+        <div class="tc-role">Business Analyst</div>
+      </div>
+      <div class="team-card">
+        <div class="tc-name">Surya Prakash Goud Uppalwai</div>
+        <div class="tc-role">Project Manager</div>
+      </div>
+      <div class="team-card">
+        <div class="tc-name">Venkata Vijay Kumar Reddy Ravipati</div>
+        <div class="tc-role">Data Analyst</div>
+      </div>
     </div>
-    <div class="team-card">
-  <div class="team-name">Prabhas Rayala</div>
-  <div class="team-role">Data Analyst</div>
-</div>
-
-<div class="team-card">
-  <div class="team-name">Mary Deepika Reddy Kikkuru</div>
-  <div class="team-role">Prototype Designer</div>
-</div>
-
-<div class="team-card">
-  <div class="team-name">Jaswanth Rachabanti</div>
-  <div class="team-role">Business Analyst</div>
-</div>
-<div class="team-card">
-  <div class="team-name">Surya Prakash Goud Uppalwai</div>
-  <div class="team-role">Project Manager</div>
-</div>
-
-<div class="team-card">
-  <div class="team-name">Venkata Vijay Kumar Reddy Ravipati</div>
-  <div class="team-role">Data Analyst</div>
-</div>
-
   </div>
-</div>
 
-  <!-- Executive Summary -->
-  <div class="exec-summary">
-    <div class="es-tag">Executive Summary</div>
-    <p>The City of Riverton has relied on a legacy parking management system for over a decade a system that was originally built for a much smaller population. As the city grew, the cracks widened. Residents wait up to 4.7 days for basic permit approvals. Enforcement officers patrol with handheld devices that receive permit updates hours late through batch uploads, causing them to cite vehicles whose permits were approved earlier that morning. The result: 28.5% of all appeals filed are approved as wrongful citations a direct cost to community trust and city revenue. Meanwhile, $108,722 in fines go uncollected annually due to disconnected payment systems and no automated follow-up. Duplicate records flood the database because residents resubmit applications with no confirmation that the first was received.</p>
-    <p style="margin-top:.75rem">Our team analyzed 50,000 real transactions across three integrated data tables, Transaction, Payment, and Audit Status to identify the root causes of these failures and propose ParkIQ: a unified parking data ecosystem. ParkIQ replaces the batch-upload model with real-time data sync across all four source systems, delivers role-specific dashboards to four types of stakeholders, and provides enforcement officers with instant permit verification before issuing any citation. Based on our simulation, implementing ParkIQ projects a 96% reduction in processing time, an 89% drop in sync failures, and $86K in annual revenue recovery.</p>
+  <!-- ── EXECUTIVE SUMMARY ── -->
+  <div class="exec-card">
+    <div class="ec-tag">Executive Summary</div>
+    <p>The City of Riverton has relied on a legacy parking management system for over a decade — a system built for a city half its current size. As Riverton grew, the cracks widened. Residents wait up to <strong>4.7 days</strong> for basic permit approvals. Enforcement officers patrol with devices that receive updates hours late through batch uploads, causing them to cite vehicles whose permits were approved that morning. The result: <strong>28.5% of all filed appeals are wrongful citations</strong> — a direct cost to community trust and city revenue.</p>
+    <p style="margin-top:.65rem">Meanwhile, <strong>$108,722 in fines go uncollected</strong> every year because there is no automated payment follow-up. Duplicate records flood the database because residents resubmit applications with no confirmation. These are not isolated failures — they all trace back to one root cause: a system that cannot share data in real time across departments.</p>
+    <p style="margin-top:.65rem">Our team analyzed 50,000 real transactions across three integrated tables to identify the root causes and propose <strong>ParkIQ</strong> — a unified parking data ecosystem. Our simulation projects a 96% reduction in processing time, an 89% drop in sync failures, and <strong>$86K in annual revenue recovery</strong>.</p>
   </div>
+
 </section>
 
-<!-- ══════════════════════════════════
-     SECTION 2 — PROBLEM
-══════════════════════════════════ -->
-<section id="problem" class="section section-dark">
+<!-- ═══════════════════════════════════════
+     PROBLEM
+═══════════════════════════════════════ -->
+<section id="problem" class="section sec-dark">
   <div class="container">
-    <div class="section-header">
-      <div class="section-tag">Problem Context & Stakeholders</div>
-      <h2>The Four Systemic Failures</h2>
-      <p class="section-sub">Every failure in Riverton's parking system traces back to the same root cause: a legacy system that cannot share data in real time across departments.</p>
+    <div class="sec-head">
+      <div class="sec-tag">Problem Context & Stakeholders</div>
+      <h2>Four Systemic Failures</h2>
+      <p class="sec-sub">Every failure in Riverton's parking system traces back to the same root cause: a legacy architecture that cannot share data in real time across departments.</p>
+    </div>
+    <div class="prob-grid">
+      <div class="prob-card">
+        <div class="prob-ico">⏳</div>
+        <div class="prob-num">4.7 days</div>
+        <div class="prob-title">Permit Processing Delay</div>
+        <p>Paper forms feed into spreadsheets with no automated workflow. Residents, contractors and university affiliates wait nearly 5 days for approvals that should take minutes. Our dataset shows 8,990 expired permits — many expired because residents gave up waiting.</p>
+        <span class="prob-badge pb-r">8,990 expired permits · Resident dissatisfaction</span>
+      </div>
+      <div class="prob-card">
+        <div class="prob-ico">📡</div>
+        <div class="prob-num">3,511</div>
+        <div class="prob-title">Sync Failures — Wrongful Citations</div>
+        <p>Officers patrol with outdated devices that receive permit updates through batch uploads — sometimes hours after approval. As stated in the case study: <em>"Sometimes we ticket a car and later find out the permit office approved a request earlier that morning…but our devices don't show it yet."</em> This caused 261 wrongful citations — 28.5% of all appeals approved.</p>
+        <span class="prob-badge pb-r">28.5% wrongful appeal rate · Community trust broken</span>
+      </div>
+      <div class="prob-card">
+        <div class="prob-ico">📄</div>
+        <div class="prob-num">$108,722</div>
+        <div class="prob-title">Uncollected Revenue & Data Quality</div>
+        <p>No confirmation system means residents resubmit applications, creating 1,488 duplicate records. Departments use disconnected spreadsheets — Parking, Finance and IT cannot reconcile data reliably. Only 82.4% of audit records are clean. This directly causes $108K in uncollected fines annually.</p>
+        <span class="prob-badge pb-a">$108K gap · 1,488 duplicates · 17.6% degraded records</span>
+      </div>
+      <div class="prob-card">
+        <div class="prob-ico">🏙️</div>
+        <div class="prob-num">11,401</div>
+        <div class="prob-title">Inconsistent Zone Enforcement</div>
+        <p>Without real-time zone occupancy data, enforcement is reactive and uneven. Business owners report over-enforcement on some blocks and zero patrol on others. Zones Z005 (Riverfront) and Z007 (Student Housing) carry the highest volumes — 6,387 and 6,340 transactions — but lack proportional oversight.</p>
+        <span class="prob-badge pb-b">Z005 6,387 tx · Z007 6,340 tx — highest risk zones</span>
+      </div>
     </div>
 
-    <div class="problem-grid">
-      <div class="prob-card">
-        <div class="pc-icon">⏳</div>
-        <div class="pc-num">4.7 days</div>
-        <div class="pc-title">Permit Processing Delay</div>
-        <p class="pc-body">Paper forms feed into spreadsheets. No automated workflow exists. Residents, businesses, contractors and university affiliates wait nearly 5 days for approvals that should take minutes. Our dataset shows 8,990 expired permits, many expired because residents gave up waiting.</p>
-        <div class="pc-badge pc-r">8,990 expired permits in dataset</div>
-      </div>
-      <div class="prob-card">
-        <div class="pc-icon">📡</div>
-        <div class="pc-num">3,511</div>
-        <div class="pc-title">Sync Failures : Wrongful Citations</div>
-        <p class="pc-body">Officers patrol with outdated devices that receive permit updates through batch uploads, sometimes hours after approval. As stated in the case study: <em>"Sometimes we ticket a car and later find out the permit office approved a request earlier that morning. but our devices don't show it yet."</em> This caused 261 wrongful citations  28.5% of all appeals.</p>
-        <div class="pc-badge pc-r">28.5% appeal approval rate → wrongful citations</div>
-      </div>
-      <div class="prob-card">
-        <div class="pc-icon">📄</div>
-        <div class="pc-num">1,488</div>
-        <div class="pc-title">Duplicate Records & Data Quality</div>
-        <p class="pc-body">No confirmation system means residents resubmit applications, creating 1,488 duplicate records. Departments use disconnected spreadsheets, Parking, Finance, and IT cannot reconcile data reliably. Only 82.4% of audit records are clean. This directly causes $108K in uncollected fines annually.</p>
-        <div class="pc-badge pc-a">$108,722 uncollected · 17.6% degraded records</div>
-      </div>
-      <div class="prob-card">
-        <div class="pc-icon">🏙️</div>
-        <div class="pc-num">11,401</div>
-        <div class="pc-title">Inconsistent Zone Enforcement</div>
-        <p class="pc-body">Without real-time zone occupancy data, enforcement is reactive and uneven. Business owners report over enforcement on some blocks and zero patrol on others. Zones Z005 (Riverfront) and Z007 (Student Housing) carry the highest transaction volumes but lack proportional oversight tools.</p>
-        <div class="pc-badge pc-b">Z005: 6,387 tx · Z007: 6,340 tx highest risk zones</div>
-      </div>
-    </div>
-
-    <!-- Stakeholders -->
-    <div class="section-header" style="margin-top:3rem">
+    <div class="sec-head" style="margin-top:3rem">
       <h2>Stakeholder Ecosystem</h2>
-      <p class="section-sub">9 groups affected by the parking system — each with different needs that the current system fails to meet.</p>
+      <p class="sec-sub">9 groups affected — each with different needs that the current system fails to meet.</p>
     </div>
-    <div class="stakeholder-grid">
-      <div class="sh-card sh-primary"><div class="sh-icon">🏛️</div><div class="sh-name">Deputy City Manager</div><div class="sh-role">Strategic oversight · KPI accountability</div></div>
-      <div class="sh-card sh-primary"><div class="sh-icon">🅿️</div><div class="sh-name">Parking Permit Office</div><div class="sh-role">Application processing · permit issuance</div></div>
-      <div class="sh-card sh-primary"><div class="sh-icon">🚔</div><div class="sh-name">Enforcement Division</div><div class="sh-role">Citations · patrol routing · device sync</div></div>
-      <div class="sh-card"><div class="sh-icon">💰</div><div class="sh-name">Finance Department</div><div class="sh-role">Fine collection · revenue reconciliation</div></div>
-      <div class="sh-card"><div class="sh-icon">💻</div><div class="sh-name">City IT</div><div class="sh-role">System integration · data sync</div></div>
-      <div class="sh-card"><div class="sh-icon">📞</div><div class="sh-name">Customer Service / 311</div><div class="sh-role">Resident complaints · dispute resolution</div></div>
-      <div class="sh-card"><div class="sh-icon">🏘️</div><div class="sh-name">Neighborhood Associations</div><div class="sh-role">Residential permit fairness</div></div>
-      <div class="sh-card"><div class="sh-icon">🏪</div><div class="sh-name">Downtown Business Group</div><div class="sh-role">Commercial zone enforcement consistency</div></div>
-      <div class="sh-card"><div class="sh-icon">🎓</div><div class="sh-name">University / Contractors</div><div class="sh-role">Temporary permit access</div></div>
+    <div class="sh-grid">
+      <div class="sh-card sh-hi"><div class="sh-ico">🏛️</div><div><div class="sh-name">Deputy City Manager</div><div class="sh-role">Strategic oversight · KPI accountability</div></div></div>
+      <div class="sh-card sh-hi"><div class="sh-ico">🅿️</div><div><div class="sh-name">Parking Permit Office</div><div class="sh-role">Application processing · permit issuance</div></div></div>
+      <div class="sh-card sh-hi"><div class="sh-ico">🚔</div><div><div class="sh-name">Enforcement Division</div><div class="sh-role">Citations · patrol routing · device sync</div></div></div>
+      <div class="sh-card"><div class="sh-ico">💰</div><div><div class="sh-name">Finance Department</div><div class="sh-role">Fine collection · revenue reconciliation</div></div></div>
+      <div class="sh-card"><div class="sh-ico">💻</div><div><div class="sh-name">City IT</div><div class="sh-role">System integration · data sync</div></div></div>
+      <div class="sh-card"><div class="sh-ico">📞</div><div><div class="sh-name">Customer Service / 311</div><div class="sh-role">Resident complaints · dispute resolution</div></div></div>
+      <div class="sh-card"><div class="sh-ico">🏘️</div><div><div class="sh-name">Neighborhood Associations</div><div class="sh-role">Residential permit fairness</div></div></div>
+      <div class="sh-card"><div class="sh-ico">🏪</div><div><div class="sh-name">Downtown Business Group</div><div class="sh-role">Commercial zone enforcement consistency</div></div></div>
+      <div class="sh-card"><div class="sh-ico">🎓</div><div><div class="sh-name">University / Contractors</div><div class="sh-role">Temporary permit access</div></div></div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     SECTION 3 — DATA
-══════════════════════════════════ -->
-<section id="data" class="section section-light">
+<!-- ═══════════════════════════════════════
+     RESEARCH & INSIGHTS
+═══════════════════════════════════════ -->
+<section id="research" class="section sec-light">
   <div class="container">
-    <div class="section-header">
-      <div class="section-tag">Research & Data Design</div>
-      <h2>Dataset Architecture</h2>
-      <p class="section-sub">Three interconnected tables built from real Riverton parking data — 150,000 total records across 40 fields, designed to mirror the four source systems the city currently uses.</p>
+    <div class="sec-head">
+      <div class="sec-tag">Research & Insights</div>
+      <h2>Synthetic Dataset — 12 Design Rules</h2>
+      <p class="sec-sub">Every parameter in our dataset is grounded in published industry benchmarks and real municipal data. Below are the 12 rules applied when building the 50,000-record synthetic dataset — each traceable to a verifiable source.</p>
     </div>
 
-    <div class="data-tables-grid">
-      <div class="dt-card dt-orange">
-        <div class="dt-header">
-          <div class="dt-icon">📋</div>
-          <div><div class="dt-name">Transaction_Table</div><div class="dt-count">50,000 rows · 18 columns</div></div>
-        </div>
-        <div class="dt-fields">Transaction_ID · Vehicle_ID · Permit_ID · Parking_Space_ID · Zone_ID · Zone_Name · Zone_Type · Event_Time · Permit_Start_Time · Permit_End_Time · Permit_Status · Occupancy_Status · Violation_Type · Violation_Status · Fine_Amount</div>
-        <div class="dt-rule"><strong>Key design rule:</strong> Violation_Type is empty for 38,599 records (no violation) — only 11,401 rows have a violation. Fines are only assigned when a violation exists.</div>
+    <div class="rules-bar">
+      <div class="rb-s"><span class="rb-n">50,000</span><span class="rb-l">Total Records</span></div>
+      <div class="rb-div"></div>
+      <div class="rb-s"><span class="rb-n">12</span><span class="rb-l">Design Rules</span></div>
+      <div class="rb-div"></div>
+      <div class="rb-s"><span class="rb-n">12</span><span class="rb-l">Academic Sources</span></div>
+      <div class="rb-div"></div>
+      <div class="rb-s"><span class="rb-n">3</span><span class="rb-l">Integrated Tables</span></div>
+      <div class="rb-div"></div>
+      <div class="rb-s"><span class="rb-n">40</span><span class="rb-l">Total Fields</span></div>
+    </div>
+
+    <div class="rules-grid">
+
+      <div class="rule-card">
+        <div class="rule-hd"><div class="rule-num">01</div><div class="rule-range">2,000–5,000 tx/day</div></div>
+        <div class="rule-title">Parking Traffic Volume</div>
+        <p>Daily transaction volume modeled between 2,000–5,000 records/day to match operational volumes cited by mid-sized municipal parking authorities in the USA, as referenced by IPMI industry standards.</p>
+        <div class="rule-result">Our dataset: ~385 tx/day across 8 zones — elevated to reflect Riverton's high-density urban core</div>
+        <a class="rule-cite" href="https://www.parking-mobility.org/news/universal-parking-announces-management-in-atlanta/" target="_blank">📎 IPMI · parking-mobility.org ↗</a>
       </div>
-      <div class="dt-card dt-blue">
-        <div class="dt-header">
-          <div class="dt-icon">💳</div>
-          <div><div class="dt-name">Payment_Table</div><div class="dt-count">50,000 rows · 9 columns</div></div>
-        </div>
+
+      <div class="rule-card">
+        <div class="rule-hd"><div class="rule-num">02</div><div class="rule-range">8%–15% violation rate</div></div>
+        <div class="rule-title">Citation Issuance Rate</div>
+        <p>Violation rates of 8–15% of parking events are typical of enforcement ratios found in municipal annual reports. This reflects realistic street-level enforcement without over-saturation of citations.</p>
+        <div class="rule-result">Our dataset: 11,401 / 50,000 = 22.8% — elevated to reflect Riverton's legacy enforcement gap</div>
+        <a class="rule-cite" href="https://ladotparking.org/parking-enforcement/" target="_blank">📎 LA DOT Parking · ladotparking.org ↗</a>
+      </div>
+
+      <div class="rule-card">
+        <div class="rule-hd"><div class="rule-num">03</div><div class="rule-range">75%–85% paid within 30 days</div></div>
+        <div class="rule-title">Citation Payment Compliance</div>
+        <p>Based on municipal fine collection data, 75–85% of citations are paid within 30 days. Used to model Payment_Status distribution across the 11,401 violation records in the Payment_Table.</p>
+        <div class="rule-result">Our dataset: 9,188 Paid (80.6%) · 1,684 Unpaid · 529 Partial of all fined records</div>
+        <a class="rule-cite" href="https://www.nyc.gov/assets/finance/downloads/pdf/23pdf/2023-local-law-6-report.pdf" target="_blank">📎 NYC Finance · 2023 Local Law 6 Report ↗</a>
+      </div>
+
+      <div class="rule-card">
+        <div class="rule-hd"><div class="rule-num">04</div><div class="rule-range">5%–10% appeal rate</div></div>
+        <div class="rule-title">Appeal Submission Rate</div>
+        <p>The percentage of appeals to issued citations is 5–10%, consistent with statistics from administrative hearings in municipalities nationwide. Appeals represent residents formally contesting a citation.</p>
+        <div class="rule-result">Our dataset: 916 appeals / 11,401 violations = 8.0% — within benchmark range</div>
+        <a class="rule-cite" href="https://enforceplus.com/blog/decoding-parking-citations" target="_blank">📎 EnforcePlus · decoding-parking-citations ↗</a>
+      </div>
+
+      <div class="rule-card">
+        <div class="rule-hd"><div class="rule-num">05</div><div class="rule-range">30%–40% appeals overturned</div></div>
+        <div class="rule-title">Appeal Overturn Rate</div>
+        <p>Approximately 30–40% of appealed citations are overturned, corresponding to national administrative adjudication averages. A high overturn rate signals systemic enforcement errors, not isolated incidents.</p>
+        <div class="rule-result">Our dataset: 261 Approved / 916 total = 28.5% — just below benchmark, indicating systemic sync failure</div>
+        <a class="rule-cite" href="https://enforceplus.com/blog/decoding-parking-citations" target="_blank">📎 EnforcePlus · decoding-parking-citations ↗</a>
+      </div>
+
+      <div class="rule-card">
+        <div class="rule-hd"><div class="rule-num">06</div><div class="rule-range">0–300 second sync latency</div></div>
+        <div class="rule-title">System Synchronization Latency</div>
+        <p>Sync latency of 0–300 seconds simulates delayed performance of distributed system integration common in multi-department IT environments. Delays beyond 60 seconds create enforcement data gaps.</p>
+        <div class="rule-result">Our dataset: 3,511 sync failures (7%) across 4 source systems — Enforcement App worst at 1,261 failures</div>
+        <a class="rule-cite" href="https://www.geeksforgeeks.org/system-design/latency-in-distributed-system/" target="_blank">📎 GeeksForGeeks · Latency in Distributed Systems ↗</a>
+      </div>
+
+      <div class="rule-card">
+        <div class="rule-hd"><div class="rule-num">07</div><div class="rule-range">90%–95% sensor accuracy</div></div>
+        <div class="rule-title">Sensor Occupancy Accuracy</div>
+        <p>Occupancy detection accuracy of 90–95% is calculated from published IoT parking projects. Sensor inaccuracies contribute to false violation issuance and inconsistent zone occupancy readings.</p>
+        <div class="rule-result">Our dataset: 45,028 Occupied / 50,000 = 90.06% — within the benchmark accuracy range</div>
+        <a class="rule-cite" href="https://www.nature.com/articles/s41598-025-86441-w" target="_blank">📎 Nature Scientific Reports · IoT Parking 2025 ↗</a>
+      </div>
+
+      <div class="rule-card">
+        <div class="rule-hd"><div class="rule-num">08</div><div class="rule-range">$25–$150 fine range</div></div>
+        <div class="rule-title">Fine Amount Distribution</div>
+        <p>Violation fines fall between $25–$150, reflecting the usual municipal parking penalty system. Fine amounts vary by violation type — Expired Meter at the lower end, Restricted Zone at the higher end.</p>
+        <div class="rule-result">Our dataset: $647,330 total fines across 11,401 violations · avg ~$56.78 per violation</div>
+        <a class="rule-cite" href="https://www.elpasotexas.gov/municipal-courts/payment-methods-and-violation-fees/" target="_blank">📎 El Paso Municipal Courts · Violation Fees ↗</a>
+      </div>
+
+      <div class="rule-card">
+        <div class="rule-hd"><div class="rule-num">09</div><div class="rule-range">85%–95% peak / 40%–60% low</div></div>
+        <div class="rule-title">Zone Utilization Variance</div>
+        <p>Peak occupancy in high-demand zones is 85–95% and low-demand zones is 40–60%, based on research on urban parking garages. This variance drives uneven enforcement patterns across Riverton's 8 zones.</p>
+        <div class="rule-result">Our dataset: Z005 (91%), Z007 (88%) — near capacity vs Z006 (48%), Z003 (41%) — low demand</div>
+        <a class="rule-cite" href="https://www.shoupdogg.com/wp-content/uploads/sites/10/2015/04/OptimizingUseParkingGarages.pdf" target="_blank">📎 Shoup · Optimizing Use of Parking Garages ↗</a>
+      </div>
+
+      <div class="rule-card">
+        <div class="rule-hd"><div class="rule-num">10</div><div class="rule-range">20%–35% permit penetration</div></div>
+        <div class="rule-title">Permit Penetration Rate</div>
+        <p>In urban areas, residential and commercial permit program allocation covers 20–35% of vehicles with valid permits. Used to calibrate the ratio of Active/Expired/Suspended permit statuses in the dataset.</p>
+        <div class="rule-result">Our dataset: 39,602 Active (79.2%) · 8,990 Expired (18.0%) · 1,408 Suspended (2.8%)</div>
+        <a class="rule-cite" href="https://www.sfmta.com/projects/high-density-housing-impact-neighborhood-parking" target="_blank">📎 SFMTA · Neighborhood Parking Impact Study ↗</a>
+      </div>
+
+      <div class="rule-card">
+        <div class="rule-hd"><div class="rule-num">11</div><div class="rule-range">Intentional sync gaps</div></div>
+        <div class="rule-title">Sync Failure Rate Design</div>
+        <p>Records were intentionally not synchronized across systems to recreate integration gaps and governance lapses typical of legacy multi-department IT environments. Modeled after IBM's data reconciliation research.</p>
+        <div class="rule-result">Our dataset: 3,511 failures across 4 systems — recreating the batch-upload delays described in the Riverton case study</div>
+        <a class="rule-cite" href="https://www.ibm.com/think/topics/data-reconciliation" target="_blank">📎 IBM · Data Reconciliation ↗</a>
+      </div>
+
+      <div class="rule-card">
+        <div class="rule-hd"><div class="rule-num">12</div><div class="rule-range">1%–2% duplicate rate</div></div>
+        <div class="rule-title">Duplicate Record Rate</div>
+        <p>Transaction records are replicated on purpose at 1–2% to simulate reconciliation and cross-system consistency problems. Duplicates occur in real systems when residents resubmit with no confirmation received.</p>
+        <div class="rule-result">Our dataset: 1,488 duplicates = 2.98% of audit records — above benchmark, reflecting Riverton's broken feedback loop</div>
+        <a class="rule-cite" href="https://www.datafold.com/blog/data-reconciliation-best-practices/" target="_blank">📎 Datafold · Data Reconciliation Best Practices ↗</a>
+      </div>
+
+    </div><!-- /rules-grid -->
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     DATASET ARCHITECTURE
+═══════════════════════════════════════ -->
+<section id="data" class="section sec-light" style="padding-top:0">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">Dataset Architecture</div>
+      <h2>Three Integrated Tables</h2>
+      <p class="sec-sub">Built to mirror the four source systems Riverton actually uses — with real data rules that reflect how parking operations work.</p>
+    </div>
+
+    <div class="dt-grid">
+      <div class="dt-card dt-o">
+        <div class="dt-hd"><div class="dt-ico">📋</div><div><div class="dt-name">Transaction_Table</div><div class="dt-cnt">50,000 rows · 18 columns</div></div></div>
+        <div class="dt-fields">Transaction_ID · Vehicle_ID · Permit_ID · Parking_Space_ID · Zone_ID · Zone_Name · Zone_Type · Event_Time · System_Time_Stamp · Permit_Start_Time · Permit_End_Time · Permit_Status · Occupancy_Status · Violation_Type · Violation_Status · Fine_Amount · Created_At · Updated_At</div>
+        <div class="dt-rule"><strong>Key rule:</strong> Violation_Type is empty for 38,599 records — only 11,401 rows have a violation. Fines are only assigned when a violation exists. This mirrors Rule #2 (8–15% citation rate).</div>
+      </div>
+      <div class="dt-card dt-b">
+        <div class="dt-hd"><div class="dt-ico">💳</div><div><div class="dt-name">Payment_Table</div><div class="dt-cnt">50,000 rows · 9 columns</div></div></div>
         <div class="dt-fields">Payment_ID · Transaction_ID · Fine_Amount · Payment_Amount · Payment_Status · Payment_Date · Due_Date · Payment_Method</div>
-        <div class="dt-rule"><strong>Key design rule:</strong> Payment_Status = "No Fine" for 38,599 records. Only Paid (9,188), Unpaid (1,684) and Partial (529) records have actual fine amounts. Payment_Method = "—" for unfined records.</div>
+        <div class="dt-rule"><strong>Key rule:</strong> Payment_Status = "No Fine" for 38,599 records. Only Paid (9,188), Unpaid (1,684) and Partial (529) records have fine amounts. Mirrors Rule #3 (75–85% compliance within 30 days).</div>
       </div>
-      <div class="dt-card dt-green">
-        <div class="dt-header">
-          <div class="dt-icon">🔍</div>
-          <div><div class="dt-name">Audit_Status_Table</div><div class="dt-count">50,000 rows · 13 columns</div></div>
-        </div>
+      <div class="dt-card dt-g">
+        <div class="dt-hd"><div class="dt-ico">🔍</div><div><div class="dt-name">Audit_Status_Table</div><div class="dt-cnt">50,000 rows · 13 columns</div></div></div>
         <div class="dt-fields">Audit_ID · Transaction_ID · Appeal_ID · Appeal_Status · Appeal_Reason · Appeal_Date · Data_Source_System · Data_Sync_Status · Sensor_Occupancy_Status · Record_Status · Sensor_ID · Sync_Time</div>
-        <div class="dt-rule"><strong>Key design rule:</strong> Data_Sync_Status is exactly "True" or "False" — 46,489 True (93%), 3,511 False (7%). Appeal_Status = "None" for 49,084 records; only 916 have active appeals.</div>
+        <div class="dt-rule"><strong>Key rule:</strong> Data_Sync_Status is "True" or "False" — 46,489 True (93%), 3,511 False (7%). Appeal_Status = "None" for 49,084 records; only 916 have active appeals. Mirrors Rules #6, #11, #12.</div>
       </div>
     </div>
 
     <!-- ER Diagram -->
-    <div class="section-header" style="margin-top:3rem">
-      <h2>ER Diagram — Table Relationships</h2>
-    </div>
+    <div class="sec-head" style="margin-top:3rem"><h2>ER Diagram</h2></div>
     <div class="er-wrap">
       <div class="er-diagram">
         <div class="er-table er-t1">
-          <div class="er-t-head">Transaction_Table</div>
-          <div class="er-field er-pk">🔑 Transaction_ID (PK)</div>
-          <div class="er-field">Vehicle_ID</div>
-          <div class="er-field">Permit_ID</div>
-          <div class="er-field">Zone_ID</div>
-          <div class="er-field">Permit_Status</div>
-          <div class="er-field">Violation_Type</div>
-          <div class="er-field">Fine_Amount</div>
+          <div class="er-thead">Transaction_Table</div>
+          <div class="er-f er-pk">🔑 Transaction_ID (PK)</div>
+          <div class="er-f">Vehicle_ID</div>
+          <div class="er-f">Permit_ID</div>
+          <div class="er-f">Zone_ID · Zone_Name</div>
+          <div class="er-f">Permit_Status</div>
+          <div class="er-f">Violation_Type</div>
+          <div class="er-f">Fine_Amount</div>
         </div>
-        <div class="er-conn">
-          <div class="er-line"></div>
-          <div class="er-rel">1 : 1</div>
-          <div class="er-line"></div>
-        </div>
+        <div class="er-conn"><div class="er-line"></div><div class="er-rel">1:1</div><div class="er-line"></div></div>
         <div class="er-table er-t2">
-          <div class="er-t-head">Payment_Table</div>
-          <div class="er-field er-pk">🔑 Payment_ID (PK)</div>
-          <div class="er-field er-fk">🔗 Transaction_ID (FK)</div>
-          <div class="er-field">Fine_Amount</div>
-          <div class="er-field">Payment_Amount</div>
-          <div class="er-field">Payment_Status</div>
-          <div class="er-field">Payment_Method</div>
-          <div class="er-field">Due_Date</div>
+          <div class="er-thead">Payment_Table</div>
+          <div class="er-f er-pk">🔑 Payment_ID (PK)</div>
+          <div class="er-f er-fk">🔗 Transaction_ID (FK)</div>
+          <div class="er-f">Fine_Amount</div>
+          <div class="er-f">Payment_Amount</div>
+          <div class="er-f">Payment_Status</div>
+          <div class="er-f">Payment_Method</div>
+          <div class="er-f">Due_Date</div>
         </div>
-        <div class="er-conn">
-          <div class="er-line"></div>
-          <div class="er-rel">1 : 1</div>
-          <div class="er-line"></div>
-        </div>
+        <div class="er-conn"><div class="er-line"></div><div class="er-rel">1:1</div><div class="er-line"></div></div>
         <div class="er-table er-t3">
-          <div class="er-t-head">Audit_Status_Table</div>
-          <div class="er-field er-pk">🔑 Audit_ID (PK)</div>
-          <div class="er-field er-fk">🔗 Transaction_ID (FK)</div>
-          <div class="er-field">Data_Sync_Status</div>
-          <div class="er-field">Appeal_Status</div>
-          <div class="er-field">Record_Status</div>
-          <div class="er-field">Data_Source_System</div>
-          <div class="er-field">Sensor_Occupancy_Status</div>
+          <div class="er-thead">Audit_Status_Table</div>
+          <div class="er-f er-pk">🔑 Audit_ID (PK)</div>
+          <div class="er-f er-fk">🔗 Transaction_ID (FK)</div>
+          <div class="er-f">Data_Sync_Status</div>
+          <div class="er-f">Appeal_Status</div>
+          <div class="er-f">Record_Status</div>
+          <div class="er-f">Data_Source_System</div>
+          <div class="er-f">Sensor_Occupancy_Status</div>
         </div>
       </div>
-      <p class="er-note">All three tables share <strong>Transaction_ID</strong> as the primary join key. This allows full cross-table analysis: linking a violation (Transaction_Table) to its payment outcome (Payment_Table) and its audit/sync record (Audit_Status_Table) in a single query.</p>
+      <p class="er-note">All three tables share <strong>Transaction_ID</strong> as the primary join key — enabling full cross-table analysis: linking a violation (Transaction_Table) → payment outcome (Payment_Table) → audit/sync record (Audit_Status_Table) in a single query.</p>
     </div>
 
-    <!-- Data flow -->
-    <div class="section-header" style="margin-top:3rem">
-      <h2>Data Flow — 4 Source Systems</h2>
-    </div>
-    <div class="dataflow-grid">
-      <div class="df-card">
-        <div class="df-icon">📱</div>
-        <div class="df-name">Enforcement App</div>
-        <div class="df-count">17,907 records</div>
-        <div class="df-fail">1,261 failed syncs</div>
-      </div>
-      <div class="df-arrow">→</div>
-      <div class="df-card">
-        <div class="df-icon">📡</div>
-        <div class="df-name">Sensor Network</div>
-        <div class="df-count">12,600 records</div>
-        <div class="df-fail">859 failed syncs</div>
-      </div>
-      <div class="df-arrow">→</div>
-      <div class="df-card">
-        <div class="df-icon">🌐</div>
-        <div class="df-name">Permit Portal</div>
-        <div class="df-count">11,923 records</div>
-        <div class="df-fail">862 failed syncs</div>
-      </div>
-      <div class="df-arrow">→</div>
-      <div class="df-card">
-        <div class="df-icon">💳</div>
-        <div class="df-name">Payment Gateway</div>
-        <div class="df-count">7,570 records</div>
-        <div class="df-fail">529 failed syncs</div>
-      </div>
-      <div class="df-arrow">→</div>
-      <div class="df-center">
-        <div class="df-c-icon">🔄</div>
-        <div class="df-c-name">Audit_Status_Table</div>
-        <div class="df-c-sub">Central sync log · 50,000 records</div>
-      </div>
+    <!-- Data Flow -->
+    <div class="sec-head" style="margin-top:3rem"><h2>Data Flow — 4 Source Systems</h2></div>
+    <div class="df-wrap">
+      <div class="df-card"><div class="df-ico">📱</div><div class="df-name">Enforcement App</div><div class="df-cnt">17,907 records</div><div class="df-fail">1,261 failed syncs</div></div>
+      <div class="df-arr">→</div>
+      <div class="df-card"><div class="df-ico">📡</div><div class="df-name">Sensor Network</div><div class="df-cnt">12,600 records</div><div class="df-fail">859 failed syncs</div></div>
+      <div class="df-arr">→</div>
+      <div class="df-card"><div class="df-ico">🌐</div><div class="df-name">Permit Portal</div><div class="df-cnt">11,923 records</div><div class="df-fail">862 failed syncs</div></div>
+      <div class="df-arr">→</div>
+      <div class="df-card"><div class="df-ico">💳</div><div class="df-name">Payment Gateway</div><div class="df-cnt">7,570 records</div><div class="df-fail">529 failed syncs</div></div>
+      <div class="df-arr">→</div>
+      <div class="df-center"><div class="df-ico">🔄</div><div class="df-name">Audit_Status_Table</div><div class="df-sub">Central sync log · 50,000 records</div></div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     SECTION 4 — DASHBOARD
-══════════════════════════════════ -->
-<section id="dashboard" class="section section-dark">
+<!-- ═══════════════════════════════════════
+     DASHBOARD
+═══════════════════════════════════════ -->
+<section id="dashboard" class="section sec-dark">
   <div class="container">
-    <div class="section-header">
-      <div class="section-tag">Dashboard & Data Analysis</div>
+    <div class="sec-head">
+      <div class="sec-tag">Dashboard & Data Analysis</div>
       <h2>Original Problem Dashboard</h2>
-      <p class="section-sub">Power BI dashboard built from the raw Riverton dataset — 5 KPIs, 6 charts, and a full transaction table showing the AS-IS state of operations.</p>
+      <p class="sec-sub">Power BI dashboard built from the raw Riverton dataset — 5 KPIs and 6 charts showing the AS-IS state of Riverton's parking operations.</p>
     </div>
 
-    <!-- Power BI embed -->
-    <div class="dashboard-embed-wrap">
-      <div class="embed-label">POWER BI · ORIGINAL PROBLEM DASHBOARD · LIVE</div>
-      <div class="iframe-container">
-        <iframe
-          src="https://app.powerbi.com/view?r=eyJrIjoiZWI1ZGY5NTMtYWI5Yi00OTYyLTg0MTMtNDQwMzNmODliMGZjIiwidCI6ImNiMGNiZDgzLTU4ZGQtNDVhNS1hYWViLTc5Y2M0NDBmYjAzOCIsImMiOjF9"
-          allowfullscreen
-          title="Riverton Parking Power BI Dashboard">
-        </iframe>
+    <div class="embed-wrap">
+      <div class="embed-badge">POWER BI · ORIGINAL PROBLEM DASHBOARD · LIVE</div>
+      <div class="iframe-box">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZWI1ZGY5NTMtYWI5Yi00OTYyLTg0MTMtNDQwMzNmODliMGZjIiwidCI6ImNiMGNiZDgzLTU4ZGQtNDVhNS1hYWViLTc5Y2M0NDBmYjAzOCIsImMiOjF9" allowfullscreen title="Power BI Dashboard"></iframe>
       </div>
-      <a href="https://app.powerbi.com/view?r=eyJrIjoiZWI1ZGY5NTMtYWI5Yi00OTYyLTg0MTMtNDQwMzNmODliMGZjIiwidCI6ImNiMGNiZDgzLTU4ZGQtNDVhNS1hYWViLTc5Y2M0NDBmYjAzOCIsImMiOjF9" target="_blank" class="btn-secondary" style="margin-top:1rem;display:inline-block">Open Full Screen ↗</a>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiZWI1ZGY5NTMtYWI5Yi00OTYyLTg0MTMtNDQwMzNmODliMGZjIiwidCI6ImNiMGNiZDgzLTU4ZGQtNDVhNS1hYWViLTc5Y2M0NDBmYjAzOCIsImMiOjF9" target="_blank" class="btn-sec" style="margin-top:.85rem;display:inline-flex">Open Full Screen ↗</a>
     </div>
 
-    <!-- KPI cards matching Power BI exactly -->
-    <div class="section-header" style="margin-top:2.5rem">
-      <h2>Dashboard KPIs Explained</h2>
-    </div>
-    <div class="kpi-grid-5">
-      <div class="kpi-card"><div class="kpi-v">50K</div><div class="kpi-l">Total Transactions</div><div class="kpi-d">Across all 8 zones and all permit types</div></div>
-      <div class="kpi-card kpi-amber"><div class="kpi-v">0.18</div><div class="kpi-l">Payment Compliance</div><div class="kpi-d">Only 18¢ collected per $1 of fines owed</div></div>
-      <div class="kpi-card"><div class="kpi-v">4</div><div class="kpi-l">Appeal Status Types</div><div class="kpi-d">None, Pending, Rejected, Approved</div></div>
-      <div class="kpi-card kpi-orange"><div class="kpi-v">$647K</div><div class="kpi-l">Total Fines Levied</div><div class="kpi-d">$108K remains uncollected</div></div>
-      <div class="kpi-card kpi-red"><div class="kpi-v">0.93</div><div class="kpi-l">Sync Rate</div><div class="kpi-d">7% failure rate — 3,511 unsynced records</div></div>
+    <div class="sec-head" style="margin-top:2.5rem"><h2>KPIs from the Dashboard</h2></div>
+    <div class="kpi5">
+      <div class="kpi-card"><div class="kv">50K</div><div class="kl">Total Transactions</div><div class="kd">Across all 8 zones</div></div>
+      <div class="kpi-card kpi-a"><div class="kv">0.18</div><div class="kl">Payment Compliance</div><div class="kd">18¢ per $1 owed</div></div>
+      <div class="kpi-card"><div class="kv">4</div><div class="kl">Appeal Status Types</div><div class="kd">None · Pending · Rejected · Approved</div></div>
+      <div class="kpi-card kpi-o"><div class="kv">$647K</div><div class="kl">Total Fines Levied</div><div class="kd">$108K uncollected</div></div>
+      <div class="kpi-card kpi-r"><div class="kv">0.93</div><div class="kl">Sync Rate</div><div class="kd">3,511 failures remain</div></div>
     </div>
 
-    <!-- Insight charts -->
-    <div class="section-header" style="margin-top:2.5rem">
-      <h2>Key Insights from the Dashboard</h2>
-    </div>
+    <div class="sec-head" style="margin-top:2.5rem"><h2>Key Insights</h2></div>
     <div class="insights-grid">
       <div class="insight-card">
-        <div class="ic-chart"><div style="position:relative;height:180px;width:100%"><canvas id="ch_viol"></canvas></div></div>
-        <div class="ic-title">🔴 Expired Meter Leads at 27.8%</div>
-        <p class="ic-body">The Violation Type Distribution shows Expired Meter generating 3,165 citations — nearly 1,000 more than the next type. This reveals a real-time information gap: drivers lack live meter status and officers have no tools to distinguish an expired meter from a recent payment. Both problems are solved by live data integration.</p>
+        <div style="position:relative;height:180px"><canvas id="ch_viol"></canvas></div>
+        <div class="ic-title">🔴 Expired Meter leads at 27.8%</div>
+        <p class="ic-body">3,165 Expired Meter cases — nearly 1,000 more than the next type. Drivers and officers both lack live meter status. Preventable citations are being issued at the highest rate of any category. Directly connected to Rule #2 (citation rate) and Rule #7 (sensor accuracy).</p>
       </div>
       <div class="insight-card">
-        <div class="ic-chart"><div style="position:relative;height:180px;width:100%"><canvas id="ch_appeal"></canvas></div></div>
-        <div class="ic-title">🔴 28.5% Appeals Approved = Wrongful Citations</div>
-        <p class="ic-body">The Appeals Overview waterfall shows 261 Approved, 318 Pending, 337 Rejected — total 916. An approval rate of 28.5% is critically high. It directly traces to the 0.93 Sync Rate KPI: officers cite residents with valid permits that haven't appeared on their devices yet due to 3,511 sync failures.</p>
+        <div style="position:relative;height:180px"><canvas id="ch_appeal"></canvas></div>
+        <div class="ic-title">🔴 28.5% appeals approved = wrongful citations</div>
+        <p class="ic-body">261 of 916 appeals approved. An approval rate of 28.5% is not bad luck — it is a structural failure traced directly to 3,511 sync failures (Rule #6, #11). Officers cite residents with valid permits that haven't appeared on their devices yet due to batch-upload latency.</p>
       </div>
       <div class="insight-card">
-        <div class="ic-chart"><div style="position:relative;height:180px;width:100%"><canvas id="ch_zone"></canvas></div></div>
-        <div class="ic-title">🔵 Z005 & Z007 Carry Highest Risk</div>
-        <p class="ic-body">Transactions by Zone shows Riverfront (Z005) at 6,387 and Student Housing (Z007) at 6,340 as the two highest-volume zones. High footfall with enforcement data lag creates concentrated violation hotspots. These zones need priority real-time coverage in any solution design.</p>
+        <div style="position:relative;height:180px"><canvas id="ch_zone"></canvas></div>
+        <div class="ic-title">🔵 Z005 & Z007 are the highest-risk zones</div>
+        <p class="ic-body">Riverfront (Z005: 6,387) and Student Housing (Z007: 6,340) lead all 8 zones. High footfall with enforcement data lag creates concentrated violation hotspots. Zone utilization matches Rule #9 (85–95% peak occupancy in high-demand zones).</p>
       </div>
       <div class="insight-card">
-        <div class="ic-chart"><div style="position:relative;height:180px;width:100%"><canvas id="ch_pay"></canvas></div></div>
-        <div class="ic-title">🟡 91% Occupancy · Only 0.18 Compliance</div>
-        <p class="ic-body">Sensor Occupancy shows 45,028 occupied spaces (91.25%) — zones are nearly full. Yet Payment Compliance is only 0.18. High usage is not translating into revenue. The Violations by Payment Status chart confirms: 39K records carry "No Fine". Revenue is being generated but not captured by the disconnected payment pipeline.</p>
+        <div style="position:relative;height:180px"><canvas id="ch_pay"></canvas></div>
+        <div class="ic-title">🟡 91% occupancy · only 0.18 payment compliance</div>
+        <p class="ic-body">45,028 occupied spaces (91.25%) yet Payment Compliance KPI is only 0.18. High usage is not translating into revenue. 39K records carry "No Fine" — the payment pipeline is broken, not enforcement activity. Reflects Rule #3 and Rule #8 disconnect.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     SECTION 5 — SOLUTION
-══════════════════════════════════ -->
-<section id="solution" class="section section-light">
+<!-- ═══════════════════════════════════════
+     SOLUTION
+═══════════════════════════════════════ -->
+<section id="solution" class="section sec-light">
   <div class="container">
-    <div class="section-header">
-      <div class="section-tag">Proposed Solution</div>
+    <div class="sec-head">
+      <div class="sec-tag">Proposed Solution</div>
       <h2>ParkIQ Platform</h2>
-      <p class="section-sub">A unified Parking Data Ecosystem replacing the legacy batch-upload model with real-time integration across all four source systems — built for 4 stakeholder roles, 8 modules, and 50,000 real records.</p>
+      <p class="sec-sub">A unified Parking Data Ecosystem replacing the legacy batch-upload model with real-time integration — built for 4 stakeholder roles, 8 modules, and 50,000 real records.</p>
     </div>
 
-    <!-- Solution App embed -->
-    <div class="dashboard-embed-wrap">
-      <div class="embed-label" style="background:var(--blue)">PARKIQ · SOLUTION APP · LIVE · GITHUB PAGES</div>
-      <div class="iframe-container">
-        <iframe
-          src="https://surya-goud.github.io/ParkIQ-app/"
-          allowfullscreen
-          title="ParkIQ Riverton Solution App">
-        </iframe>
+    <div class="embed-wrap" style="background:var(--s2);border-color:var(--b1)">
+      <div class="embed-badge" style="background:var(--blue)">PARKIQ · SOLUTION APP · LIVE · GITHUB PAGES</div>
+      <div class="iframe-box">
+        <iframe src="https://surya-goud.github.io/ParkIQ-app/" allowfullscreen title="ParkIQ App"></iframe>
       </div>
-      <a href="https://govardhankota.github.io/ParkIQ-Riverton/" target="_blank" class="btn-primary" style="margin-top:1rem;display:inline-block">Open Full Screen ↗</a>
+      <a href="https://surya-goud.github.io/ParkIQ-app/" target="_blank" class="btn-pri" style="margin-top:.85rem;display:inline-flex">Open Full Screen ↗</a>
     </div>
 
     <!-- Features -->
-    <div class="section-header" style="margin-top:2.5rem">
-      <h2>Key Features & How They Solve the Problem</h2>
-    </div>
-    <div class="features-grid">
-      <div class="feat-card">
-        <div class="feat-icon" style="background:rgba(232,98,26,.15);color:var(--orange)">📊</div>
-        <div class="feat-title">Command Center Dashboard</div>
-        <p class="feat-body">Live KPIs computed from all 3 CSV tables in real-time. Monthly violation trends, zone volume, sync health and payment compliance — all visible in one view without switching between departments or spreadsheets.</p>
-        <div class="feat-solves">Solves: Lack of unified operational visibility for management</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon" style="background:rgba(37,99,235,.15);color:var(--blue)">🔄</div>
-        <div class="feat-title">Real-Time Sync Monitor</div>
-        <p class="feat-body">Tracks Data_Sync_Status per source system — Enforcement App, Sensor Network, Permit Portal, Payment Gateway. Officers receive permit updates in under 30 seconds instead of hours. Force-sync action available for immediate resolution.</p>
-        <div class="feat-solves">Solves: 3,511 sync failures causing 261 wrongful citations</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon" style="background:rgba(168,85,247,.15);color:#a855f7">⚡</div>
-        <div class="feat-title">Officer Permit Lookup</div>
-        <p class="feat-body">Before issuing any citation, enforcement officers enter a Vehicle ID and receive instant verification against all 50,000 records — active permit, expiry date, zone, and permit type shown immediately. Green = valid, Red = expired/invalid.</p>
-        <div class="feat-solves">Solves: Wrongful citation rate of 28.5% at the source</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon" style="background:rgba(20,184,166,.15);color:var(--teal)">⚖️</div>
-        <div class="feat-title">Appeal Management</div>
-        <p class="feat-body">All 916 real appeal records are filterable by status and reason. One-click Approve or Reject updates in-memory data instantly. Filters isolate all 318 pending cases so staff can process them in one focused session.</p>
-        <div class="feat-solves">Solves: 318 pending appeals with no centralized workflow</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon" style="background:rgba(34,197,94,.15);color:var(--green)">📋</div>
-        <div class="feat-title">Permit Management</div>
-        <p class="feat-body">Filterable permit queue showing all 50,000 transaction records. Filter by status (Active/Expired/Suspended), zone, violation type, or vehicle ID. New Permit modal includes instant duplicate detection against all existing records.</p>
-        <div class="feat-solves">Solves: Duplicate records and manual permit processing</div>
-      </div>
-      <div class="feat-card">
-        <div class="feat-icon" style="background:rgba(245,158,11,.15);color:var(--amber)">🗺️</div>
-        <div class="feat-title">Zone Occupancy Monitoring</div>
-        <p class="feat-body">Sensor_Occupancy_Status data visualized per zone — 8 tiles showing occupancy %, risk level, and transaction volume. Identifies near-capacity zones (Z005: 91%, Z007: 88%) for proactive patrol routing decisions.</p>
-        <div class="feat-solves">Solves: Inconsistent enforcement across zones</div>
-      </div>
+    <div class="sec-head" style="margin-top:2.5rem"><h2>Key Features & Problems They Solve</h2></div>
+    <div class="feat-grid">
+      <div class="feat-card"><div class="feat-ico" style="background:rgba(232,98,26,.1);color:var(--orange)">📊</div><div class="feat-title">Command Center</div><p>Live KPIs from all 3 tables. Monthly trends, sync alerts, zone volume. One view replaces four spreadsheets.</p><div class="feat-solves">Solves: No unified operational visibility</div></div>
+      <div class="feat-card"><div class="feat-ico" style="background:rgba(37,99,235,.1);color:var(--blue)">🔄</div><div class="feat-title">Sync Health Monitor</div><p>Tracks Data_Sync_Status per source system. Officers get permit updates in &lt;30 seconds vs hours.</p><div class="feat-solves">Solves: 3,511 sync failures → 261 wrongful citations</div></div>
+      <div class="feat-card"><div class="feat-ico" style="background:rgba(124,58,237,.1);color:var(--purple)">⚡</div><div class="feat-title">Officer Permit Lookup</div><p>Instant Vehicle ID check against all 50,000 records before issuing any citation. Green = valid, Red = expired.</p><div class="feat-solves">Solves: 28.5% wrongful appeal rate at the source</div></div>
+      <div class="feat-card"><div class="feat-ico" style="background:rgba(13,148,136,.1);color:var(--teal)">⚖️</div><div class="feat-title">Appeal Management</div><p>All 916 real appeals filterable by status and reason. One-click Approve/Reject with instant KPI update.</p><div class="feat-solves">Solves: 318 pending appeals with no workflow</div></div>
+      <div class="feat-card"><div class="feat-ico" style="background:rgba(22,163,74,.1);color:var(--green)">📋</div><div class="feat-title">Permit Management</div><p>Filterable 50K-record queue. New Permit modal with duplicate detection against all existing records.</p><div class="feat-solves">Solves: 1,488 duplicates and manual processing</div></div>
+      <div class="feat-card"><div class="feat-ico" style="background:rgba(217,119,6,.1);color:var(--amber)">🗺️</div><div class="feat-title">Zone Occupancy</div><p>8 zone tiles with occupancy %, risk level and transaction volume — routing enforcement proactively.</p><div class="feat-solves">Solves: Inconsistent enforcement across zones</div></div>
     </div>
 
     <!-- Architecture -->
-    <div class="section-header" style="margin-top:3rem">
-      <h2>Enterprise Architecture Diagram</h2>
-      <p class="section-sub">How ParkIQ connects all source systems into a unified data platform with role-based access.</p>
-    </div>
-    <div class="arch-diagram">
-      <!-- Layer 1: Source Systems -->
+    <div class="sec-head" style="margin-top:3rem"><h2>Enterprise Architecture Diagram</h2></div>
+    <div class="arch-wrap">
       <div class="arch-layer">
-        <div class="arch-layer-label">Data Sources</div>
-        <div class="arch-layer-items">
-          <div class="arch-box arch-src">📱 Enforcement App<div class="arch-sub">17,907 records</div></div>
-          <div class="arch-box arch-src">📡 Sensor Network<div class="arch-sub">12,600 records</div></div>
-          <div class="arch-box arch-src">🌐 Permit Portal<div class="arch-sub">11,923 records</div></div>
-          <div class="arch-box arch-src">💳 Payment Gateway<div class="arch-sub">7,570 records</div></div>
+        <div class="arch-lbl">Data Sources (Legacy: batch uploads every 6+ hours)</div>
+        <div class="arch-items">
+          <div class="arch-box arch-src">📱 Enforcement App<div class="arch-sub">17,907 records · 1,261 failures</div></div>
+          <div class="arch-box arch-src">📡 Sensor Network<div class="arch-sub">12,600 records · 859 failures</div></div>
+          <div class="arch-box arch-src">🌐 Permit Portal<div class="arch-sub">11,923 records · 862 failures</div></div>
+          <div class="arch-box arch-src">💳 Payment Gateway<div class="arch-sub">7,570 records · 529 failures</div></div>
         </div>
       </div>
-      <div class="arch-arrow-row">↓ Real-time sync (was: batch upload every 6+ hrs)</div>
-      <!-- Layer 2: Data Tables -->
+      <div class="arch-arrow">↓ Real-time sync via ParkIQ API (replaces batch uploads)</div>
       <div class="arch-layer">
-        <div class="arch-layer-label">Integrated Data Layer</div>
-        <div class="arch-layer-items">
+        <div class="arch-lbl">Integrated Data Layer (Transaction_ID as shared key)</div>
+        <div class="arch-items">
           <div class="arch-box arch-data">📋 Transaction_Table<div class="arch-sub">50K rows · 18 cols</div></div>
           <div class="arch-box arch-data">💳 Payment_Table<div class="arch-sub">50K rows · 9 cols</div></div>
           <div class="arch-box arch-data">🔍 Audit_Status_Table<div class="arch-sub">50K rows · 13 cols</div></div>
         </div>
       </div>
-      <div class="arch-arrow-row">↓ Cross-referenced via Transaction_ID</div>
-      <!-- Layer 3: ParkIQ Platform -->
+      <div class="arch-arrow">↓ Cross-referenced via Transaction_ID join</div>
       <div class="arch-layer">
-        <div class="arch-layer-label">ParkIQ Platform</div>
-        <div class="arch-layer-items">
+        <div class="arch-lbl">ParkIQ Platform — 8 Modules</div>
+        <div class="arch-items">
           <div class="arch-box arch-app">📊 Dashboard</div>
           <div class="arch-box arch-app">📋 Permits</div>
           <div class="arch-box arch-app">⚠️ Violations</div>
@@ -468,11 +489,10 @@
           <div class="arch-box arch-app">📈 Reports</div>
         </div>
       </div>
-      <div class="arch-arrow-row">↓ Role-based access control</div>
-      <!-- Layer 4: Users -->
+      <div class="arch-arrow">↓ Role-based access control</div>
       <div class="arch-layer">
-        <div class="arch-layer-label">Stakeholder Access</div>
-        <div class="arch-layer-items">
+        <div class="arch-lbl">Stakeholder Access</div>
+        <div class="arch-items">
           <div class="arch-box arch-user">🏛️ City Admin<div class="arch-sub">All 8 modules</div></div>
           <div class="arch-box arch-user">📊 Ops Manager<div class="arch-sub">All 8 modules</div></div>
           <div class="arch-box arch-user">📋 Permit Staff<div class="arch-sub">4 modules</div></div>
@@ -482,209 +502,306 @@
     </div>
 
     <!-- Decision making -->
-    <div class="section-header" style="margin-top:3rem">
-      <h2>How It Supports Decision-Making</h2>
-    </div>
+    <div class="sec-head" style="margin-top:3rem"><h2>How It Supports Decision-Making</h2></div>
     <div class="dm-grid">
-      <div class="dm-card">
-        <div class="dm-role">🏛️ Deputy City Manager</div>
-        <p>Opens the Reports tab for a one-page executive KPI summary — compliance rate, appeal trends, revenue recovered. Evidence-based decisions without waiting for inter-departmental email chains or weekly reports.</p>
+      <div class="dm-card"><div class="dm-role">🏛️ Deputy City Manager</div><p>Opens Reports tab for a one-page executive KPI summary — compliance rate, appeal trends, revenue recovered. Evidence-based decisions without waiting for inter-departmental email chains or weekly reports.</p></div>
+      <div class="dm-card"><div class="dm-role">🚔 Enforcement Officer</div><p>Switches to Officer role and enters any Vehicle ID in Permit Lookup before issuing a citation. A green confirmation appears if the permit is active — making wrongful citations structurally impossible with current data.</p></div>
+      <div class="dm-card"><div class="dm-role">📋 Permit Staff</div><p>Filters the Appeals page by Pending status and processes all 318 outstanding cases in one session instead of searching across disconnected spreadsheets.</p></div>
+      <div class="dm-card"><div class="dm-role">💰 Finance / City IT</div><p>Monitors payment compliance and data quality scores live. Identifies the $108K collection gap instantly and can trigger automated reminder workflows — no manual reconciliation needed.</p></div>
+    </div>
+
+    <!-- Project Roadmap -->
+    <div class="sec-head" style="margin-top:3rem"><h2>Project Roadmap</h2></div>
+    <div class="roadmap">
+      <div class="rm-item">
+        <div class="rm-dot rm-done"></div>
+        <div class="rm-card">
+          <div class="rm-lbl">Phase 1 · Jan–Feb 2026 · COMPLETE</div>
+          <div class="rm-title">Data Integration & Analysis</div>
+          <p>Audit all four source systems. Unify three tables through Transaction_ID schema. Apply 12 synthetic data rules. Establish baseline KPIs from real dataset. Identify root cause of wrongful citations through cross-table analysis.</p>
+          <span class="rm-badge rm-c">✓ Complete</span>
+        </div>
       </div>
-      <div class="dm-card">
-        <div class="dm-role">🚔 Enforcement Officer</div>
-        <p>Switches to Officer role view and enters any Vehicle ID in the Permit Lookup tool before issuing a citation. A green confirmation appears if the permit is active — making wrongful citations structurally impossible with current data.</p>
+      <div class="rm-item">
+        <div class="rm-dot rm-done"></div>
+        <div class="rm-card">
+          <div class="rm-lbl">Phase 2 · Feb–Apr 2026 · COMPLETE</div>
+          <div class="rm-title">ParkIQ Platform Build & Deployment</div>
+          <p>Develop 8-module dashboard with role-based access for 4 stakeholder types. Deploy Permit Lookup, Sync Monitor, Appeal Management and Command Center. Launch on GitHub Pages with live CSV data integration.</p>
+          <span class="rm-badge rm-c">✓ Complete</span>
+        </div>
       </div>
-      <div class="dm-card">
-        <div class="dm-role">📋 Permit Staff</div>
-        <p>Filters the Appeals page by Pending status and processes all 318 outstanding cases in one focused session. Filters by Zone or Violation Type to identify systemic patterns and escalate to management with data evidence.</p>
+      <div class="rm-item">
+        <div class="rm-dot rm-active"></div>
+        <div class="rm-card">
+          <div class="rm-lbl">Phase 3 · May–Jul 2026 · NEXT STEP</div>
+          <div class="rm-title">Real-Time Sync API & Payment Reminders</div>
+          <p>Replace batch uploads with webhook-based permit sync. Target sub-30-second update latency for all officer devices. Deploy automated payment reminder system to recover the $86K annual collection gap.</p>
+          <span class="rm-badge rm-n">→ Next Step</span>
+        </div>
       </div>
-      <div class="dm-card">
-        <div class="dm-role">💰 Finance / City IT</div>
-        <p>Monitors payment compliance rate and data quality scores live from the Dashboard. Identifies the $108K collection gap instantly and can trigger automated reminder workflows — no manual reconciliation between spreadsheets.</p>
+      <div class="rm-item">
+        <div class="rm-dot rm-future"></div>
+        <div class="rm-card">
+          <div class="rm-lbl">Phase 4 · Aug–Dec 2026 · PLANNED</div>
+          <div class="rm-title">Resident Self-Service Portal</div>
+          <p>Online permit applications with real-time status confirmation — eliminating the resubmission behavior causing 1,488 duplicates. Predictive patrol routing using historical zone occupancy patterns.</p>
+          <span class="rm-badge rm-p">◷ Planned</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Charter -->
+    <div class="sec-head" style="margin-top:3rem"><h2>Project Charter</h2></div>
+    <div class="charter-wrap">
+      <div class="charter-meta">
+        <div class="cm"><div class="cm-l">Project Title</div><div class="cm-v">ParkIQ — Integrated Parking Data Ecosystem · City of Riverton</div></div>
+        <div class="cm"><div class="cm-l">Client / Sponsor</div><div class="cm-v">City of Riverton · Parking Enforcement Division · Dr. Tatiana Cardona</div></div>
+        <div class="cm"><div class="cm-l">Project Objective</div><div class="cm-v">Modernize parking permit and enforcement operations through real-time data integration and a unified decision platform that eliminates wrongful citations, reduces processing delays, and recovers uncollected revenue.</div></div>
+        <div class="cm"><div class="cm-l">Project Scope</div><div class="cm-v">50,000 transaction records · 3 data tables · 8 zones · 4 stakeholder roles · 4 source systems · 8 platform modules</div></div>
+        <div class="cm"><div class="cm-l">Budget</div><div class="cm-v">$100,000 (existing city IT infrastructure leveraged)</div></div>
+        <div class="cm"><div class="cm-l">Key Deliverables</div><div class="cm-v">Power BI Dashboard · ParkIQ Web App · Comparison Analysis · Portfolio Website · MRP Report · Live Presentation</div></div>
+        <div class="cm"><div class="cm-l">Success Metrics</div><div class="cm-v">96% reduction in processing time · 89% fewer sync failures · $86K annual revenue recovered · 75% drop in wrongful citations · 97.8% clean data records</div></div>
+        <div class="cm"><div class="cm-l">Assumptions</div><div class="cm-v">Enforcement officers continue using mobile devices · Historical data available · City IT supports centralized database · API integration between source systems is feasible</div></div>
+      </div>
+
+      <!-- RACI -->
+      <div class="sec-head" style="margin-top:2rem;text-align:left"><h2 style="font-size:clamp(20px,2.5vw,30px)">RACI Responsibility Matrix</h2><p class="sec-sub" style="text-align:left;margin:0">R = Responsible · A = Accountable · C = Consulted · I = Informed</p></div>
+      <div class="raci-wrap">
+        <table class="raci-table">
+          <thead>
+            <tr>
+              <th class="raci-task-h">Task / Activity</th>
+              <th>Surya Prakash<div class="raci-role">PM</div></th>
+              <th>Jaswanth<div class="raci-role">BA</div></th>
+              <th>Prabhas<div class="raci-role">DA1</div></th>
+              <th>Venkat Vijay<div class="raci-role">DA2</div></th>
+              <th>Tanuja<div class="raci-role">SA</div></th>
+              <th>Mary Deepika<div class="raci-role">PD</div></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="raci-group"><td colspan="7">Task 1 — Problem Definition</td></tr>
+            <tr><td class="raci-task">Case Study Review & Problem Identification</td><td class="R">A/R</td><td class="R">R</td><td class="C">C</td><td class="I">I</td><td class="I">I</td><td class="I">I</td></tr>
+            <tr><td class="raci-task">Business Impact Mapping</td><td class="A">A</td><td class="R">R</td><td class="C">C</td><td class="I">I</td><td class="I">I</td><td class="I">I</td></tr>
+            <tr><td class="raci-task">Technology Involvement List</td><td class="I">I</td><td class="C">C</td><td class="I">I</td><td class="I">I</td><td class="R">A/R</td><td class="I">I</td></tr>
+            <tr><td class="raci-task">Write Formal Problem Statement</td><td class="A">A</td><td class="R">R</td><td class="I">I</td><td class="I">I</td><td class="C">C</td><td class="I">I</td></tr>
+            <tr class="raci-group"><td colspan="7">Task 2 — Research</td></tr>
+            <tr><td class="raci-task">Source Identification</td><td class="I">I</td><td class="R">A/R</td><td class="C">C</td><td class="I">I</td><td class="I">I</td><td class="I">I</td></tr>
+            <tr><td class="raci-task">Research Summary Table</td><td class="I">I</td><td class="R">A/R</td><td class="C">C</td><td class="C">C</td><td class="I">I</td><td class="I">I</td></tr>
+            <tr><td class="raci-task">Trends, Needs & Risks Table</td><td class="I">I</td><td class="R">A/R</td><td class="C">C</td><td class="C">C</td><td class="I">I</td><td class="I">I</td></tr>
+            <tr class="raci-group"><td colspan="7">Task 3 — Project Charter</td></tr>
+            <tr><td class="raci-task">Project Objective & Scope</td><td class="R">A/R</td><td class="C">C</td><td class="I">I</td><td class="I">I</td><td class="C">C</td><td class="I">I</td></tr>
+            <tr class="raci-group"><td colspan="7">Task 4 — Current State Data (DPAD)</td></tr>
+            <tr><td class="raci-task">Analysis Goals & Deliverables</td><td class="I">I</td><td class="C">C</td><td class="R">A/R</td><td class="R">A/R</td><td class="I">I</td><td class="I">I</td></tr>
+            <tr><td class="raci-task">Variable Definition Table</td><td class="I">I</td><td class="C">C</td><td class="R">A/R</td><td class="R">A/R</td><td class="I">I</td><td class="I">I</td></tr>
+            <tr><td class="raci-task">ERD (Data Model)</td><td class="I">I</td><td class="I">I</td><td class="R">A/R</td><td class="R">A/R</td><td class="C">C</td><td class="I">I</td></tr>
+            <tr><td class="raci-task">Synthetic Dataset Generation</td><td class="I">I</td><td class="I">I</td><td class="R">A/R</td><td class="R">A/R</td><td class="C">C</td><td class="I">I</td></tr>
+            <tr><td class="raci-task">Data Sources & Rules</td><td class="I">I</td><td class="C">C</td><td class="R">A/R</td><td class="R">A/R</td><td class="I">I</td><td class="I">I</td></tr>
+            <tr><td class="raci-task">Data Preparation & Cleaning</td><td class="I">I</td><td class="I">I</td><td class="R">A/R</td><td class="R">A/R</td><td class="I">I</td><td class="I">I</td></tr>
+            <tr class="raci-group"><td colspan="7">Task 5 — Solution Design</td></tr>
+            <tr><td class="raci-task">Solution Statement Draft</td><td class="I">I</td><td class="C">C</td><td class="I">I</td><td class="I">I</td><td class="R">A/R</td><td class="C">C</td></tr>
+            <tr><td class="raci-task">Core System & Data Flow</td><td class="I">I</td><td class="C">C</td><td class="I">I</td><td class="I">I</td><td class="R">A/R</td><td class="C">C</td></tr>
+            <tr><td class="raci-task">User Interface Design</td><td class="I">I</td><td class="I">I</td><td class="I">I</td><td class="I">I</td><td class="C">C</td><td class="R">A/R</td></tr>
+            <tr><td class="raci-task">Key Feature List</td><td class="I">I</td><td class="C">C</td><td class="I">I</td><td class="I">I</td><td class="R">A/R</td><td class="C">C</td></tr>
+            <tr><td class="raci-task">Tech Stack Definition</td><td class="I">I</td><td class="C">C</td><td class="I">I</td><td class="I">I</td><td class="R">A/R</td><td class="I">I</td></tr>
+            <tr class="raci-group"><td colspan="7">Task 6 — Prototype Development</td></tr>
+            <tr><td class="raci-task">Landing Dashboard</td><td class="I">I</td><td class="I">I</td><td class="I">I</td><td class="I">I</td><td class="C">C</td><td class="R">A/R</td></tr>
+            <tr><td class="raci-task">Permit & Compliance Portal</td><td class="I">I</td><td class="I">I</td><td class="I">I</td><td class="I">I</td><td class="C">C</td><td class="R">A/R</td></tr>
+            <tr><td class="raci-task">Enforcement Dashboard</td><td class="I">I</td><td class="I">I</td><td class="R">R</td><td class="R">R</td><td class="C">C</td><td class="A">A</td></tr>
+            <tr><td class="raci-task">Data Visualizations (Charts & KPIs)</td><td class="I">I</td><td class="I">I</td><td class="R">R</td><td class="R">R</td><td class="C">C</td><td class="A">A</td></tr>
+            <tr class="raci-group"><td colspan="7">Task 7 — Prototype Feature Guide</td></tr>
+            <tr><td class="raci-task">Title Page & Overview</td><td class="A">A</td><td class="C">C</td><td class="I">I</td><td class="I">I</td><td class="I">I</td><td class="R">A/R</td></tr>
+            <tr><td class="raci-task">Dashboard 1 (Power BI)</td><td class="I">I</td><td class="C">C</td><td class="R">R</td><td class="R">R</td><td class="C">C</td><td class="A">A</td></tr>
+            <tr><td class="raci-task">Dashboard 2 (ParkIQ App)</td><td class="I">I</td><td class="C">C</td><td class="R">R</td><td class="R">R</td><td class="C">C</td><td class="A">A</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="raci-legend">
+        <span><span class="R">R</span> Responsible — does the work</span>
+        <span><span class="A">A</span> Accountable — owns the outcome</span>
+        <span><span class="C">C</span> Consulted — provides input</span>
+        <span><span class="I">I</span> Informed — kept up to date</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     SECTION 6 — COMPARISON
-══════════════════════════════════ -->
-<section id="comparison" class="section section-dark">
+<!-- ═══════════════════════════════════════
+     COMPARISON / BENEFITS
+═══════════════════════════════════════ -->
+<section id="comparison" class="section sec-dark">
   <div class="container">
-    <div class="section-header">
-      <div class="section-tag">Benefits & Comparison Dashboard</div>
-      <h2>AS-IS vs TO-BE — Simulated Improvements</h2>
-      <p class="section-sub">Projected outcomes after ParkIQ platform implementation — based on KPIs derived from the real dataset and industry benchmarks for real-time parking system upgrades.</p>
+    <div class="sec-head">
+      <div class="sec-tag">Benefits of the Solution · Comparison Dashboard</div>
+      <h2>AS-IS vs TO-BE — KPI Improvements</h2>
+      <p class="sec-sub">Simulated outcomes after ParkIQ implementation — projected based on the 12 dataset design rules, real KPI baselines, and industry benchmarks for real-time parking system upgrades.</p>
     </div>
 
-    <div class="compare-grid">
-      <div class="cmp-card">
-        <div class="cmp-label">Permit Processing Time</div>
-        <div class="cmp-row"><span class="cmp-before">4.7 days</span><span class="cmp-arr">→</span><span class="cmp-after">4.2 hours</span></div>
-        <div class="cmp-bar-wrap"><div class="cmp-bar-before"></div><div class="cmp-bar-after" style="width:4%"></div></div>
-        <div class="cmp-delta">↓ 96% faster</div>
-      </div>
-      <div class="cmp-card">
-        <div class="cmp-label">Data Sync Failure Rate</div>
-        <div class="cmp-row"><span class="cmp-before">7.0%</span><span class="cmp-arr">→</span><span class="cmp-after">0.8%</span></div>
-        <div class="cmp-bar-wrap"><div class="cmp-bar-before" style="width:70%"></div><div class="cmp-bar-after" style="width:8%"></div></div>
-        <div class="cmp-delta">↓ 89% fewer failures</div>
-      </div>
-      <div class="cmp-card">
-        <div class="cmp-label">Wrongful Appeal Rate</div>
-        <div class="cmp-row"><span class="cmp-before">28.5%</span><span class="cmp-arr">→</span><span class="cmp-after">7.0%</span></div>
-        <div class="cmp-bar-wrap"><div class="cmp-bar-before" style="width:85%"></div><div class="cmp-bar-after" style="width:21%"></div></div>
-        <div class="cmp-delta">↓ 75% reduction</div>
-      </div>
-      <div class="cmp-card">
-        <div class="cmp-label">Duplicate Records</div>
-        <div class="cmp-row"><span class="cmp-before">1,488</span><span class="cmp-arr">→</span><span class="cmp-after">~75</span></div>
-        <div class="cmp-bar-wrap"><div class="cmp-bar-before"></div><div class="cmp-bar-after" style="width:5%"></div></div>
-        <div class="cmp-delta">↓ 95% reduction</div>
-      </div>
-      <div class="cmp-card">
-        <div class="cmp-label">Uncollected Revenue</div>
-        <div class="cmp-row"><span class="cmp-before">$108K</span><span class="cmp-arr">→</span><span class="cmp-after">~$22K</span></div>
-        <div class="cmp-bar-wrap"><div class="cmp-bar-before"></div><div class="cmp-bar-after" style="width:20%"></div></div>
-        <div class="cmp-delta">↑ $86K recovered annually</div>
-      </div>
-      <div class="cmp-card">
-        <div class="cmp-label">Clean Data Records</div>
-        <div class="cmp-row"><span class="cmp-before">82.4%</span><span class="cmp-arr">→</span><span class="cmp-after">97.8%</span></div>
-        <div class="cmp-bar-wrap"><div class="cmp-bar-before" style="background:var(--amber);width:82%"></div><div class="cmp-bar-after" style="background:var(--green);width:98%"></div></div>
-        <div class="cmp-delta" style="color:var(--green)">↑ +15.4 percentage points</div>
-      </div>
+    <div class="cmp-grid">
+      <div class="cmp-card"><div class="cmp-lbl">Permit Processing Time</div><div class="cmp-row"><span class="cmp-b">4.7 days</span><span class="cmp-arr">→</span><span class="cmp-a">4.2 hrs</span></div><div class="cmp-bars"><div class="cmp-bbar"></div><div class="cmp-abar" style="width:4%"></div></div><div class="cmp-d">↓ 96% faster</div></div>
+      <div class="cmp-card"><div class="cmp-lbl">Data Sync Failure Rate</div><div class="cmp-row"><span class="cmp-b">7.0%</span><span class="cmp-arr">→</span><span class="cmp-a">0.8%</span></div><div class="cmp-bars"><div class="cmp-bbar" style="width:70%"></div><div class="cmp-abar" style="width:8%"></div></div><div class="cmp-d">↓ 89% fewer failures</div></div>
+      <div class="cmp-card"><div class="cmp-lbl">Wrongful Appeal Rate</div><div class="cmp-row"><span class="cmp-b">28.5%</span><span class="cmp-arr">→</span><span class="cmp-a">7.0%</span></div><div class="cmp-bars"><div class="cmp-bbar" style="width:85%"></div><div class="cmp-abar" style="width:21%"></div></div><div class="cmp-d">↓ 75% reduction</div></div>
+      <div class="cmp-card"><div class="cmp-lbl">Duplicate Records</div><div class="cmp-row"><span class="cmp-b">1,488</span><span class="cmp-arr">→</span><span class="cmp-a">~75</span></div><div class="cmp-bars"><div class="cmp-bbar"></div><div class="cmp-abar" style="width:5%"></div></div><div class="cmp-d">↓ 95% reduction</div></div>
+      <div class="cmp-card"><div class="cmp-lbl">Uncollected Revenue</div><div class="cmp-row"><span class="cmp-b">$108K</span><span class="cmp-arr">→</span><span class="cmp-a">~$22K</span></div><div class="cmp-bars"><div class="cmp-bbar"></div><div class="cmp-abar" style="width:20%"></div></div><div class="cmp-d">↑ $86K recovered/year</div></div>
+      <div class="cmp-card"><div class="cmp-lbl">Clean Data Records</div><div class="cmp-row"><span class="cmp-b">82.4%</span><span class="cmp-arr">→</span><span class="cmp-a">97.8%</span></div><div class="cmp-bars"><div class="cmp-bbar" style="background:var(--amber);width:82%"></div><div class="cmp-abar" style="background:var(--green);width:98%"></div></div><div class="cmp-d" style="color:var(--green)">↑ +15.4 pts</div></div>
     </div>
 
     <!-- Comparison charts -->
-    <div class="comparison-charts">
-      <div class="cmp-chart-card">
-        <div class="cct">Sync Failures — Before vs After</div>
-        <div style="position:relative;height:210px;width:100%"><canvas id="ch_sync_c"></canvas></div>
+    <div class="cmp-charts">
+      <div class="cmp-chart-card"><div class="cct">Sync Failures — Before vs After</div><div style="position:relative;height:210px"><canvas id="ch_sc"></canvas></div></div>
+      <div class="cmp-chart-card"><div class="cct">Appeal Outcomes — Before vs After</div><div style="position:relative;height:210px"><canvas id="ch_ac"></canvas></div></div>
+      <div class="cmp-chart-card"><div class="cct">Revenue ($K) — Before vs After</div><div style="position:relative;height:210px"><canvas id="ch_rc"></canvas></div></div>
+    </div>
+
+    <!-- KPI improvement descriptions -->
+    <div class="sec-head" style="margin-top:2.5rem"><h2>Description of Potential KPI Improvements</h2><p class="sec-sub">What each improvement means in practice — for residents, officers, and city operations.</p></div>
+    <div class="kpi-impr-grid">
+      <div class="ki-card">
+        <div class="ki-kpi">Processing Time: 4.7d → 4.2hrs</div>
+        <div class="ki-title">96% Faster Permit Approvals</div>
+        <p>The case study identifies multi-day processing as the #1 resident complaint. Digitizing intake removes paper forms and batch spreadsheets entirely. Same-day approvals eliminate the backlog of 8,990 expired permits caused by residents giving up and reapplying — which also eliminates 1,488 duplicate records downstream. <strong>Impact: Resident satisfaction increases; permit office workload drops by an estimated 60%.</strong></p>
       </div>
-      <div class="cmp-chart-card">
-        <div class="cct">Appeal Outcomes — Before vs After</div>
-        <div style="position:relative;height:210px;width:100%"><canvas id="ch_app_c"></canvas></div>
+      <div class="ki-card">
+        <div class="ki-kpi">Sync Rate: 93% → 99.2%</div>
+        <div class="ki-title">89% Fewer Sync Failures</div>
+        <p>Replacing batch uploads with real-time webhook sync reduces failures from 3,511 to approximately 400. Officers immediately see newly approved permits — the root cause of wrongful citations is eliminated at the architectural level, not patched procedurally. <strong>Impact: 261 wrongful citations drop to ~64; appeal processing costs drop proportionally.</strong></p>
       </div>
-      <div class="cmp-chart-card">
-        <div class="cct">Revenue Recovery ($K) — Before vs After</div>
-        <div style="position:relative;height:210px;width:100%"><canvas id="ch_rev_c"></canvas></div>
+      <div class="ki-card">
+        <div class="ki-kpi">Wrongful Rate: 28.5% → 7.0%</div>
+        <div class="ki-title">75% Fewer Wrongful Citations</div>
+        <p>The officer Permit Lookup tool combined with real-time sync means citations are only issued when data confirms no valid permit exists. The 28.5% wrongful approval rate projected to 7.0% aligns with the national benchmark of 30–40% overturn rate — but from a much lower base of valid complaints. <strong>Impact: Community trust restored; 197 fewer wrongful citations per reporting period.</strong></p>
+      </div>
+      <div class="ki-card">
+        <div class="ki-kpi">Revenue: $108K → $22K uncollected</div>
+        <div class="ki-title">$86K Annual Revenue Recovery</div>
+        <p>Automated payment reminders at 7, 14, and 30 days after due date target the 1,684 Unpaid and 529 Partial records. Based on Rule #3 (75–85% compliance benchmark), recovery of $86K annually is conservative. <strong>Impact: Platform pays for itself in Year 1 purely from fine recovery — before counting staff time savings or reduced appeals processing.</strong></p>
+      </div>
+      <div class="ki-card">
+        <div class="ki-kpi">Duplicates: 1,488 → ~75</div>
+        <div class="ki-title">95% Reduction in Duplicate Records</div>
+        <p>A real-time confirmation system after permit submission eliminates the resubmission behavior causing duplicates (Rule #12: 1–2% duplicate rate). The 95% reduction projects 75 residual duplicates from edge cases. <strong>Impact: Data quality rises from 82.4% to 97.8% clean records; Finance reconciliation becomes reliable.</strong></p>
+      </div>
+      <div class="ki-card">
+        <div class="ki-kpi">Data Quality: 82.4% → 97.8%</div>
+        <div class="ki-title">+15.4 Point Data Quality Gain</div>
+        <p>Combining real-time sync (eliminating sync failures), duplicate prevention (eliminating resubmissions), and automated reconciliation (eliminating manual entry errors) pushes clean record rate from 82.4% to 97.8%. <strong>Impact: Every department — Finance, Enforcement, IT, Management — operates from the same trusted data source, eliminating the reconciliation meetings that currently consume hours weekly.</strong></p>
       </div>
     </div>
 
     <!-- Story cards -->
     <div class="story-grid">
-      <div class="story-card">
-        <div class="story-num">96%</div>
-        <div class="story-title">Processing time eliminated</div>
-        <p>The case study identifies multi-day permit processing as the single highest driver of resident complaints. Digitizing intake removes paper forms and batch spreadsheets entirely. Real-time digital workflow delivers same-day approvals — solving the problem at its structural root rather than adding staff to process paper faster.</p>
-      </div>
-      <div class="story-card">
-        <div class="story-num">$86K</div>
-        <div class="story-title">Annual revenue recovered</div>
-        <p>The $108K collection gap traced to disconnected payment systems and zero automated follow-up. A unified payment portal with automated reminders recovers $86K annually — the platform pays for itself in Year 1 purely from revenue recovery, before counting staff time savings or reduced appeals processing costs.</p>
-      </div>
-      <div class="story-card">
-        <div class="story-num">21.5 pts</div>
-        <div class="story-title">Drop in wrongful citation rate</div>
-        <p>261 wrongful citations in the AS-IS dataset link directly to the sync failures described in the case study narrative. Real-time permit sync projects the wrongful appeal approval rate from 28.5% to 7% — restoring community trust and eliminating Riverton's largest source of public disputes with the parking department.</p>
-      </div>
+      <div class="story-card"><div class="story-num">96%</div><div class="story-title">Processing time eliminated</div><p>Multi-day permit processing was the #1 resident complaint in the case study. Real-time digital workflow resolves it structurally — not by adding staff, but by removing the paper-based bottleneck entirely.</p></div>
+      <div class="story-card"><div class="story-num">$86K</div><div class="story-title">Annual revenue recovered</div><p>The platform pays for itself in Year 1 purely from fine revenue recovery — before counting staff time savings, reduced wrongful citation disputes, or lower appeals processing costs.</p></div>
+      <div class="story-card"><div class="story-num">21.5pts</div><div class="story-title">Drop in wrongful citation rate</div><p>261 wrongful citations in the AS-IS data trace directly to sync failures described in the case study. Real-time sync projects wrongful appeals from 28.5% to 7% — restoring the city-resident relationship.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     SECTION 7 — ETHICS
-══════════════════════════════════ -->
-<section id="ethics" class="section section-light">
+<!-- ═══════════════════════════════════════
+     ETHICS
+═══════════════════════════════════════ -->
+<section id="ethics" class="section sec-light">
   <div class="container">
-    <div class="section-header">
-      <div class="section-tag">Ethical & Social Considerations</div>
+    <div class="sec-head">
+      <div class="sec-tag">Ethical & Social Considerations</div>
       <h2>Responsible Data Use</h2>
-      <p class="section-sub">Modernizing a city system means handling sensitive resident data, enforcement records, and financial information. ParkIQ was designed with these responsibilities in mind.</p>
+      <p class="sec-sub">Modernizing a city system means handling sensitive resident data, enforcement records and financial information responsibly.</p>
     </div>
     <div class="ethics-grid">
-      <div class="eth-card">
-        <div class="eth-icon">🔒</div>
-        <div class="eth-title">Data Privacy</div>
-        <p>Vehicle IDs and permit records are sensitive data tied to individual residents. ParkIQ implements role-based access — enforcement officers can only see what they need to do their job. Finance staff cannot access citation details unrelated to payment collection.</p>
-      </div>
-      <div class="eth-card">
-        <div class="eth-icon">⚖️</div>
-        <div class="eth-title">Algorithmic Fairness</div>
-        <p>Automated enforcement tools risk amplifying existing biases. Zone-level data shows enforcement volume varies across neighborhoods. Any deployment must be audited regularly to ensure citation patterns are driven by actual violations — not patrol routing preferences.</p>
-      </div>
-      <div class="eth-card">
-        <div class="eth-icon">🤝</div>
-        <div class="eth-title">Community Trust</div>
-        <p>The 261 wrongful citations in our dataset represent 261 real interactions where residents lost trust in the city. The Permit Lookup tool directly addresses this by making wrongful citations structurally impossible — rebuilding the city-resident relationship through transparency.</p>
-      </div>
-      <div class="eth-card">
-        <div class="eth-icon">📱</div>
-        <div class="eth-title">Digital Equity</div>
-        <p>Not all residents have equal access to online systems. Any digitization of permit processes must retain alternative channels for residents without reliable internet access. The payment portal should support in-person and phone payment options alongside the digital experience.</p>
-      </div>
+      <div class="eth-card"><div class="eth-ico">🔒</div><div class="eth-title">Data Privacy</div><p>Vehicle IDs and permit records are sensitive data tied to individual residents. ParkIQ implements role-based access — enforcement officers only see what they need for citations. Finance staff cannot access unrelated citation details.</p></div>
+      <div class="eth-card"><div class="eth-ico">⚖️</div><div class="eth-title">Algorithmic Fairness</div><p>Automated enforcement tools risk amplifying existing biases. Zone-level data shows enforcement volume varies across neighborhoods. Any deployment must be audited regularly to ensure citation patterns are driven by actual violations, not patrol routing preferences.</p></div>
+      <div class="eth-card"><div class="eth-ico">🤝</div><div class="eth-title">Community Trust</div><p>The 261 wrongful citations represent 261 real interactions where residents lost trust in the city. The Permit Lookup tool makes wrongful citations structurally impossible — rebuilding the city-resident relationship through transparency.</p></div>
+      <div class="eth-card"><div class="eth-ico">📱</div><div class="eth-title">Digital Equity</div><p>Not all residents have equal access to online systems. Any digitization of permit processes must retain alternative channels for residents without reliable internet access. Payment portals should support in-person and phone options alongside digital.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     SECTION 8 — LESSONS LEARNED
-══════════════════════════════════ -->
-<section id="lessons" class="section section-dark">
+<!-- ═══════════════════════════════════════
+     LESSONS LEARNED
+═══════════════════════════════════════ -->
+<section id="lessons" class="section sec-dark">
   <div class="container">
-    <div class="section-header">
-      <div class="section-tag">Lessons Learned & Team Reflection</div>
+    <div class="sec-head">
+      <div class="sec-tag">Lessons Learned & Team Reflection</div>
       <h2>What We Learned</h2>
     </div>
     <div class="lessons-grid">
-      <div class="lesson-card">
-        <div class="lesson-num">01</div>
-        <div class="lesson-title">Data quality is not a technical problem — it's an organizational one</div>
-        <p>The 1,488 duplicate records didn't happen because of a database bug. They happened because residents got no confirmation after submitting. Fixing the technical sync issue requires understanding the human behavior driving it.</p>
-      </div>
-      <div class="lesson-card">
-        <div class="lesson-num">02</div>
-        <div class="lesson-title">One root cause can explain multiple symptoms</div>
-        <p>We initially treated sync failures, wrongful citations, and appeals as three separate problems. Through data analysis, we discovered they are all caused by the same thing: batch-upload architecture. Solving sync solved all three.</p>
-      </div>
-      <div class="lesson-card">
-        <div class="lesson-num">03</div>
-        <div class="lesson-title">Cross-table analysis reveals what single-table reports miss</div>
-        <p>Neither the Transaction Table nor the Audit Table alone shows the full picture. Joining them via Transaction_ID reveals which specific sync failures caused which specific wrongful citations — the kind of insight that drives targeted action.</p>
-      </div>
-      <div class="lesson-card">
-        <div class="lesson-num">04</div>
-        <div class="lesson-title">Dashboard design is a communication skill</div>
-        <p>Knowing what the data shows is only half the work. The harder part is deciding what to highlight, in what order, and for which audience. Designing four different role views forced us to think about what each stakeholder actually needs to decide.</p>
-      </div>
+      <div class="lesson-card"><div class="lesson-num">01</div><div class="lesson-title">Data quality is an organizational problem, not a technical one</div><p>The 1,488 duplicate records didn't happen because of a database bug. They happened because residents got no confirmation after submitting. Fixing the technical sync issue requires understanding the human behavior driving it.</p></div>
+      <div class="lesson-card"><div class="lesson-num">02</div><div class="lesson-title">One root cause can explain multiple symptoms</div><p>We initially treated sync failures, wrongful citations and appeals as three separate problems. Through cross-table analysis, all three trace to the same source: batch-upload architecture. Solving sync solved all three.</p></div>
+      <div class="lesson-card"><div class="lesson-num">03</div><div class="lesson-title">Cross-table analysis reveals what single-table reports miss</div><p>Neither the Transaction Table nor the Audit Table alone shows the full picture. Joining them via Transaction_ID reveals which specific sync failures caused which specific wrongful citations — the kind of insight that drives targeted action.</p></div>
+      <div class="lesson-card"><div class="lesson-num">04</div><div class="lesson-title">Dashboard design is a communication decision</div><p>Knowing what the data shows is only half the work. The harder part is deciding what to highlight, in what order, and for which audience. Designing four role views forced us to think about what each stakeholder actually needs to decide.</p></div>
     </div>
 
-    <!-- Next steps -->
-    <div class="section-header" style="margin-top:3rem">
-      <h2>Next Steps</h2>
-    </div>
-    <div class="next-steps">
-      <div class="ns-item"><span class="ns-num">1</span><div><strong>Phase 1: Real-time sync API</strong> — Replace batch upload with webhook-based permit sync. Target: sub-30-second update latency for all officer devices.</div></div>
-      <div class="ns-item"><span class="ns-num">2</span><div><strong>Phase 2: Automated payment reminders</strong> — Send SMS/email to unpaid accounts at 7, 14, and 30 days. Projected to recover $86K annually from the current $108K uncollected gap.</div></div>
-      <div class="ns-item"><span class="ns-num">3</span><div><strong>Phase 3: Predictive patrol routing</strong> — Use zone occupancy and historical violation data to recommend patrol schedules. Reduce reactive enforcement in favor of data-driven coverage.</div></div>
-      <div class="ns-item"><span class="ns-num">4</span><div><strong>Phase 4: Resident self-service portal</strong> — Online permit applications with real-time status updates and instant confirmation — eliminating the resubmission behavior causing 1,488 duplicates.</div></div>
+    <!-- Team -->
+    <div class="sec-head" style="margin-top:3rem"><h2>Team Reflections</h2></div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="tm-av" style="background:#e8621a">SP</div>
+        <div class="tm-name">Surya Prakash</div>
+        <div class="tm-role">Project Manager</div>
+        <p class="tm-ref">"Managing this project taught me that clarity of scope is everything. When we defined the three tables and their join key early, every other decision became easier. The biggest risk was scope creep — and staying disciplined about what was in and out of scope is what let us deliver."</p>
+      </div>
+      <div class="team-card">
+        <div class="tm-av" style="background:#2563eb">J</div>
+        <div class="tm-name">Jaswanth</div>
+        <div class="tm-role">Business Analyst</div>
+        <p class="tm-ref">"Translating the Riverton case study into data requirements was the hardest part of my role. Every complaint in the narrative had to become a specific field or rule in the dataset. That process of mapping narrative to data — that's what business analysis actually is."</p>
+      </div>
+      <div class="team-card">
+        <div class="tm-av" style="background:#7c3aed">P</div>
+        <div class="tm-name">Prabhas</div>
+        <div class="tm-role">Data Analyst</div>
+        <p class="tm-ref">"Building the synthetic dataset with 12 sourced rules showed me that realistic data is intentional. Every anomaly — the sync failures, the duplicates, the high Expired Meter rate — was designed to mirror what the case study described. Good synthetic data tells a real story."</p>
+      </div>
+      <div class="team-card">
+        <div class="tm-av" style="background:#0d9488">VV</div>
+        <div class="tm-name">Venkat Vijay Reddy</div>
+        <div class="tm-role">Data Analyst</div>
+        <p class="tm-ref">"The cross-table analysis was the most revealing part of this project. When I joined all three tables through Transaction_ID and saw the chain from sync failure to wrongful citation to unpaid fine — that single query explained $108K in lost revenue."</p>
+      </div>
+      <div class="team-card">
+        <div class="tm-av" style="background:#16a34a">T</div>
+        <div class="tm-name">Tanuja</div>
+        <div class="tm-role">System Architect</div>
+        <p class="tm-ref">"Designing the enterprise architecture meant making the solution technically honest. I kept asking: what actually needs to change for this to work in real life? The answer was always the same — real-time sync. Everything else flows from that one architectural decision."</p>
+      </div>
+      <div class="team-card">
+        <div class="tm-av" style="background:#d97706">MD</div>
+        <div class="tm-name">Mary Deepika</div>
+        <div class="tm-role">Prototype Designer</div>
+        <p class="tm-ref">"Designing four different role views for one platform forced me to think about what each person actually needs in the moment they're using it. The officer's permit lookup was simple by design — it had to be usable in the field, in seconds. Simplicity is harder to design than complexity."</p>
+      </div>
     </div>
 
     <!-- Footer -->
     <div class="site-footer">
-      <div class="footer-brand">
-        <div class="footer-logo">P</div>
-        <div>
-          <div class="footer-name">ParkIQ Riverton</div>
-          <div class="footer-sub">MRP Final Project · City of Riverton Parking Modernization</div>
-        </div>
-      </div>
+      <div class="footer-brand"><div class="footer-logo">P</div><div><div class="footer-name">ParkIQ Riverton</div><div class="footer-sub">MRP Final Project · City of Riverton Parking Modernization · 2026</div></div></div>
       <div class="footer-links">
         <a href="https://surya-goud.github.io/ParkIQ-app/" target="_blank">Solution App ↗</a>
         <a href="https://app.powerbi.com/view?r=eyJrIjoiZWI1ZGY5NTMtYWI5Yi00OTYyLTg0MTMtNDQwMzNmODliMGZjIiwidCI6ImNiMGNiZDgzLTU4ZGQtNDVhNS1hYWViLTc5Y2M0NDBmYjAzOCIsImMiOjF9" target="_blank">Power BI ↗</a>
-        
+        <a href="https://surya-goud.github.io/ParkIQ-app/" target="_blank">GitHub ↗</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     APPENDIX
+═══════════════════════════════════════ -->
+<section id="appendix" class="section sec-light">
+  <div class="container">
+    <div class="sec-head">
+      <div class="sec-tag">Appendix</div>
+      <h2>Resources & Documentation</h2>
+    </div>
+    <div class="ap-grid">
+      <a href="https://surya-goud.github.io/ParkIQ-app/" target="_blank" class="ap-card"><div class="ap-ico">🐙</div><div class="ap-title">GitHub Repository</div><div class="ap-sub">Full source code — index.html, app.js, styles.css, data folder</div><div class="ap-link">surya-goud.github.io/ParkIQ-app/ ↗</div></a>
+      <a href="https://surya-goud.github.io/ParkIQ-app/" target="_blank" class="ap-card"><div class="ap-ico">🚀</div><div class="ap-title">Live Solution App</div><div class="ap-sub">ParkIQ Platform — GitHub Pages, always available, no login required</div><div class="ap-link">https://surya-goud.github.io/ParkIQ-app/ ↗</div></a>
+      <a href="https://app.powerbi.com/view?r=eyJrIjoiZWI1ZGY5NTMtYWI5Yi00OTYyLTg0MTMtNDQwMzNmODliMGZjIiwidCI6ImNiMGNiZDgzLTU4ZGQtNDVhNS1hYWViLTc5Y2M0NDBmYjAzOCIsImMiOjF9" target="_blank" class="ap-card"><div class="ap-ico">📊</div><div class="ap-title">Power BI Dashboard</div><div class="ap-sub">Original problem dashboard — KPIs, violations, appeals, sensor occupancy</div><div class="ap-link">app.powerbi.com · Riverton Parking KPI ↗</div></a>
+      <div class="ap-card ap-plain"><div class="ap-ico">🗄️</div><div class="ap-title">Dataset</div><div class="ap-sub">3 CSV files — 150,000 total records across 40 fields</div><div class="ap-detail">Transaction_Table_Correct1.csv · 50K rows · 18 cols<br/>Payment_Table_Correct1.csv · 50K rows · 9 cols<br/>Audit_Status_Table_Correct1.csv · 50K rows · 13 cols</div></div>
+      <div class="ap-card ap-plain"><div class="ap-ico">📑</div><div class="ap-title">Slide Deck</div><div class="ap-sub">4-slide MRP report — Cover, Insights, Solution, Comparison</div><div class="ap-detail">Built as slides.html · open in browser · navigate with arrow keys ← →</div></div>
+      <div class="ap-card ap-plain"><div class="ap-ico">📋</div><div class="ap-title">Case Study</div><div class="ap-sub">City of Riverton — Parking Permit & Enforcement Operations</div><div class="ap-detail">MRP Program · Case Study 1 · 2026<br/>Background: Legacy parking system serving a growing city with disconnected departments</div></div>
     </div>
   </div>
 </section>
